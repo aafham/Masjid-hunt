@@ -40,6 +40,7 @@ Fungsi utama:
   - Papar jarak ke LRT terdekat
   - Papar jarak ke MRT terdekat
   - Papar jarak ke ERL terdekat
+  - Papar senarai semua stesen terdekat (campur LRT+MRT+ERL) untuk perancangan perjalanan
 - Filter bar:
   - Radius: `1km / 2km / 3km`
   - Line type: `All / LRT / MRT / ERL`
