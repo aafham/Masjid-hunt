@@ -184,6 +184,38 @@
     "lng": 101.5721
   },
   {
+    "id": "kampung-selamat",
+    "name": "Kampung Selamat",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.2198,
+    "lng": 101.579
+  },
+  {
+    "id": "sungai-buloh-kajang",
+    "name": "Sungai Buloh",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.2067,
+    "lng": 101.5803
+  },
+  {
+    "id": "kota-damansara",
+    "name": "Kota Damansara",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1496,
+    "lng": 101.5819
+  },
+  {
+    "id": "surian",
+    "name": "Surian",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1492,
+    "lng": 101.594
+  },
+  {
     "id": "mutiara-damansara",
     "name": "Mutiara Damansara",
     "line_type": "MRT",
@@ -206,6 +238,22 @@
     "line_name": "MRT Kajang",
     "lat": 3.129,
     "lng": 101.6423
+  },
+  {
+    "id": "ttdi",
+    "name": "TTDI",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1369,
+    "lng": 101.6291
+  },
+  {
+    "id": "semantan",
+    "name": "Semantan",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.151,
+    "lng": 101.6653
   },
   {
     "id": "pbd",
@@ -264,12 +312,92 @@
     "lng": 101.7263
   },
   {
+    "id": "taman-midah",
+    "name": "Taman Midah",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1185,
+    "lng": 101.7364
+  },
+  {
     "id": "taman-pertama",
     "name": "Taman Pertama",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
     "lat": 3.1127,
     "lng": 101.7291
+  },
+  {
+    "id": "taman-mutiara",
+    "name": "Taman Mutiara",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1118,
+    "lng": 101.7414
+  },
+  {
+    "id": "taman-connaught",
+    "name": "Taman Connaught",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1034,
+    "lng": 101.7468
+  },
+  {
+    "id": "taman-suntex",
+    "name": "Taman Suntex",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0985,
+    "lng": 101.7538
+  },
+  {
+    "id": "sri-raya",
+    "name": "Sri Raya",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0905,
+    "lng": 101.7637
+  },
+  {
+    "id": "bandar-tun-hussein-onn",
+    "name": "Bandar Tun Hussein Onn",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0679,
+    "lng": 101.7738
+  },
+  {
+    "id": "batu-11-cheras",
+    "name": "Batu 11 Cheras",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0466,
+    "lng": 101.781
+  },
+  {
+    "id": "bukit-dukung",
+    "name": "Bukit Dukung",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0281,
+    "lng": 101.7859
+  },
+  {
+    "id": "sungai-jernih",
+    "name": "Sungai Jernih",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.0109,
+    "lng": 101.7905
+  },
+  {
+    "id": "stadium-kajang",
+    "name": "Stadium Kajang",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 2.9968,
+    "lng": 101.7914
   },
   {
     "id": "kajang-mrt",
@@ -288,6 +416,14 @@
     "lng": 101.5721
   },
   {
+    "id": "kampung-selamat-putrajaya",
+    "name": "Kampung Selamat",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.2198,
+    "lng": 101.579
+  },
+  {
     "id": "sungai-buloh-putrajaya",
     "name": "Sungai Buloh",
     "line_type": "MRT",
@@ -296,12 +432,84 @@
     "lng": 101.5619
   },
   {
+    "id": "damansara-damai",
+    "name": "Damansara Damai",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.2062,
+    "lng": 101.6079
+  },
+  {
+    "id": "sri-damansara-barat",
+    "name": "Sri Damansara Barat",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.2003,
+    "lng": 101.6187
+  },
+  {
+    "id": "sri-damansara-sentral",
+    "name": "Sri Damansara Sentral",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1951,
+    "lng": 101.6264
+  },
+  {
+    "id": "sri-delima",
+    "name": "Sri Delima",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1896,
+    "lng": 101.6366
+  },
+  {
     "id": "kepong-baru",
     "name": "Kepong Baru",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
     "lat": 3.1928,
     "lng": 101.6334
+  },
+  {
+    "id": "jinjang",
+    "name": "Jinjang",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1862,
+    "lng": 101.6478
+  },
+  {
+    "id": "sentul-barat-mrt",
+    "name": "Sentul Barat",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1782,
+    "lng": 101.6824
+  },
+  {
+    "id": "jalan-ipoh",
+    "name": "Jalan Ipoh",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1789,
+    "lng": 101.6884
+  },
+  {
+    "id": "kampung-batu-mrt",
+    "name": "Kampung Batu",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1749,
+    "lng": 101.692
+  },
+  {
+    "id": "titiwangsa-mrt",
+    "name": "Titiwangsa (MRT)",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1737,
+    "lng": 101.6952
   },
   {
     "id": "hk-lrt-mrt",
@@ -350,6 +558,110 @@
     "line_name": "MRT Putrajaya",
     "lat": 3.1331,
     "lng": 101.7158
+  },
+  {
+    "id": "kuchai",
+    "name": "Kuchai",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0919,
+    "lng": 101.6878
+  },
+  {
+    "id": "taman-naga-emas",
+    "name": "Taman Naga Emas",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0826,
+    "lng": 101.7077
+  },
+  {
+    "id": "sungai-besi-mrt",
+    "name": "Sungai Besi",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0687,
+    "lng": 101.7102
+  },
+  {
+    "id": "serdang-raya-utara",
+    "name": "Serdang Raya Utara",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0495,
+    "lng": 101.7079
+  },
+  {
+    "id": "serdang-raya-selatan",
+    "name": "Serdang Raya Selatan",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0343,
+    "lng": 101.7068
+  },
+  {
+    "id": "seri-serdang",
+    "name": "Seri Serdang",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.0194,
+    "lng": 101.7069
+  },
+  {
+    "id": "upm-mrt",
+    "name": "UPM",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9926,
+    "lng": 101.7124
+  },
+  {
+    "id": "taman-equine",
+    "name": "Taman Equine",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9829,
+    "lng": 101.6739
+  },
+  {
+    "id": "putra-permai",
+    "name": "Putra Permai",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9697,
+    "lng": 101.6706
+  },
+  {
+    "id": "sixteen-sierra",
+    "name": "16 Sierra",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9549,
+    "lng": 101.6587
+  },
+  {
+    "id": "cyberjaya-utara",
+    "name": "Cyberjaya Utara",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9404,
+    "lng": 101.6547
+  },
+  {
+    "id": "cyberjaya-city-centre",
+    "name": "Cyberjaya City Centre",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9234,
+    "lng": 101.6551
+  },
+  {
+    "id": "putrajaya-sentral-mrt",
+    "name": "Putrajaya Sentral",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 2.9387,
+    "lng": 101.7139
   },
   {
     "id": "kl-sentral-erl",

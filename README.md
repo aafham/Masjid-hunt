@@ -1,4 +1,4 @@
-# Masjid Hunt
+# Transit2Masjid
 
 Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malaysia.
 
@@ -13,7 +13,7 @@ Latest update: lokasi auto-detect + waktu solat KL/Selangor + jarak ke stesen te
 
 ## Apa Website Ini Buat
 
-Masjid Hunt bantu pengguna pejalan kaki cari masjid paling dekat dari stesen transit Malaysia
+Transit2Masjid bantu pengguna pejalan kaki cari masjid paling dekat dari stesen transit Malaysia
 (LRT/MRT/ERL) dalam radius berjalan.
 
 Fungsi utama:
@@ -199,6 +199,7 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 
 Seed stesen disimpan di `data/stations.my.json`.
 Dataset kini diperluaskan untuk lebih banyak stesen LRT/MRT/ERL, dan boleh ditambah lagi bila-bila masa.
+Liputan MRT telah diperluas dengan stesen KL/Selangor (termasuk lebih banyak stesen laluan MRT Kajang dan MRT Putrajaya) untuk bacaan `MRT terdekat` yang lebih tepat ikut lokasi semasa.
 
 Contoh stesen dalam dataset semasa:
 - Gombak

@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import LocationPrayerPanel from "@/components/LocationPrayerPanel";
 
 export const metadata: Metadata = {
-  title: "Masjid Hunt",
-  description: "Pejalan kaki ke masjid paling dekat"
+  title: "Transit2Masjid",
+  description: "Rancang jalan kaki ke masjid dari stesen terdekat"
 };
 
 export default function RootLayout({
