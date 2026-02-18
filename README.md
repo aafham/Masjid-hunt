@@ -3,6 +3,7 @@
 Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malaysia.
 
 Live URL: `https://masjid-hunt.vercel.app/`
+Latest update: lokasi auto-detect + waktu solat KL/Selangor + jarak ke stesen terdekat (LRT/MRT/ERL).
 
 ## Skop Liputan
 
