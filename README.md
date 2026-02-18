@@ -3,7 +3,7 @@
 Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malaysia.
 
 Live URL: `https://transit2masjid.vercel.app/`
-Latest update: lokasi auto-detect + waktu solat KL/Selangor + jarak ke stesen terdekat (LRT/MRT/ERL).
+Latest update: carian tunggal dengan pilihan `Station/Masjid` + lokasi auto-detect + waktu solat KL/Selangor + jarak ke stesen terdekat (LRT/MRT/ERL).
 
 ## Skop Liputan
 
@@ -18,6 +18,9 @@ Transit2Masjid bantu pengguna pejalan kaki cari masjid paling dekat dari stesen 
 
 Fungsi utama:
 - Pilih stesen transit.
+- Guna satu carian (search) dengan pilihan mode:
+  - `Station`: cari stesen sahaja.
+  - `Masjid`: cari nama masjid atau surau sahaja.
 - Pilih radius carian `1km / 2km / 3km`.
 - Auto-senarai masjid berdekatan.
 - Susun keputusan ikut jarak `Nearest` atau `Farthest`.
@@ -44,7 +47,10 @@ Fungsi utama:
   - Radius: `1km / 2km / 3km`
   - Line type: `All / LRT / MRT / ERL`
   - Sort: `Nearest / Farthest`
-- Station picker (search + dropdown).
+- Carian tunggal:
+  - Input search
+  - Pilihan scope di sebelah input: `Station` / `Masjid`
+- Station picker (dropdown stesen ikut hasil carian/filter semasa).
 - Senarai card masjid:
   - Nama masjid
   - Jarak + masa berjalan
@@ -66,12 +72,15 @@ Fungsi utama:
 ## Cara Guna (Untuk Pengguna)
 
 1. Buka `https://transit2masjid.vercel.app/`
-2. Pilih stesen dalam dropdown.
-3. Pilih radius carian (cadangan mula `2km`).
-4. Pastikan sort pada `Nearest` untuk cari paling dekat dulu.
-5. Lihat hasil card masjid.
-6. Klik `Directions` untuk buka laluan berjalan di Google Maps.
-7. Jika perlu, klik `Papar map preview` untuk lihat route dalam page.
+2. Guna carian tunggal:
+   - Pilih `Station` untuk cari stesen.
+   - Pilih `Masjid` untuk cari nama masjid/surau.
+3. Pilih stesen dalam dropdown.
+4. Pilih radius carian (cadangan mula `2km`).
+5. Pastikan sort pada `Nearest` untuk cari paling dekat dulu.
+6. Lihat hasil card masjid.
+7. Klik `Directions` untuk buka laluan berjalan di Google Maps.
+8. Jika perlu, klik `Papar map preview` untuk lihat route dalam page.
 
 ## Cara Guna (Untuk Developer - Local)
 
