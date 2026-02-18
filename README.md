@@ -2,7 +2,7 @@
 
 Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malaysia.
 
-Live URL: `https://masjid-hunt.vercel.app/`
+Live URL: `https://transit2masjid.vercel.app/`
 Latest update: lokasi auto-detect + waktu solat KL/Selangor + jarak ke stesen terdekat (LRT/MRT/ERL).
 
 ## Skop Liputan
@@ -65,7 +65,7 @@ Fungsi utama:
 
 ## Cara Guna (Untuk Pengguna)
 
-1. Buka `https://masjid-hunt.vercel.app/`
+1. Buka `https://transit2masjid.vercel.app/`
 2. Pilih stesen dalam dropdown.
 3. Pilih radius carian (cadangan mula `2km`).
 4. Pastikan sort pada `Nearest` untuk cari paling dekat dulu.
