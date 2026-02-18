@@ -1,12 +1,13 @@
 # Masjid Hunt
 
-Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL (fokus Klang Valley).
+Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malaysia.
 
 Live URL: `https://masjid-hunt.vercel.app/`
 
 ## Apa Website Ini Buat
 
-Masjid Hunt bantu pengguna pejalan kaki cari masjid paling dekat dari stesen transit Malaysia (LRT/MRT/ERL), dengan fokus awal Klang Valley.
+Masjid Hunt bantu pengguna pejalan kaki cari masjid paling dekat dari stesen transit Malaysia
+(LRT/MRT/ERL) dalam radius berjalan.
 
 Fungsi utama:
 - Pilih stesen transit.
@@ -172,6 +173,7 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 ## Dataset Stesen
 
 Seed stesen disimpan di `data/stations.my.json`.
+Dataset kini diperluaskan untuk lebih banyak stesen LRT/MRT/ERL, dan boleh ditambah lagi bila-bila masa.
 
 Contoh stesen seed:
 - KL Sentral
