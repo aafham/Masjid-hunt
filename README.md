@@ -4,6 +4,12 @@ Web app mobile-first untuk cari masjid terdekat dari stesen LRT/MRT/ERL di Malay
 
 Live URL: `https://masjid-hunt.vercel.app/`
 
+## Skop Liputan
+
+- Aplikasi ini **tidak terhad kepada Klang Valley sahaja**.
+- Liputan bergantung pada stesen yang ada dalam `data/stations.my.json`.
+- Selagi stesen LRT/MRT/ERL ada dalam dataset, pengguna boleh cari masjid berdekatan stesen tersebut.
+
 ## Apa Website Ini Buat
 
 Masjid Hunt bantu pengguna pejalan kaki cari masjid paling dekat dari stesen transit Malaysia
@@ -17,6 +23,7 @@ Fungsi utama:
 - Papar jarak dan anggaran masa berjalan.
 - Sediakan link terus `Directions` ke Google Maps.
 - Sediakan map preview route (station -> masjid) dalam card.
+- Fokus pengalaman: pejalan kaki yang nak ke masjid terdekat dari stesen LRT/MRT/ERL.
 
 ## Kandungan Website (Halaman)
 
@@ -175,7 +182,9 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 Seed stesen disimpan di `data/stations.my.json`.
 Dataset kini diperluaskan untuk lebih banyak stesen LRT/MRT/ERL, dan boleh ditambah lagi bila-bila masa.
 
-Contoh stesen seed:
+Contoh stesen dalam dataset semasa:
+- Gombak
+- Setiawangsa
 - KL Sentral
 - Masjid Jamek
 - KLCC
@@ -183,4 +192,7 @@ Contoh stesen seed:
 - Muzium Negara
 - Bukit Bintang
 - TRX
+- Kajang
+- Bandar Tasik Selatan
 - Putrajaya & Cyberjaya
+- KLIA
