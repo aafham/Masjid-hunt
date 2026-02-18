@@ -24,11 +24,21 @@ Fungsi utama:
 - Sediakan link terus `Directions` ke Google Maps.
 - Sediakan map preview route (station -> masjid) dalam card.
 - Fokus pengalaman: pejalan kaki yang nak ke masjid terdekat dari stesen LRT/MRT/ERL.
+- Papar panel auto-detect bawah header:
+  - Waktu solat semasa (KL/Selangor sahaja)
+  - Jarak lokasi semasa ke stesen LRT, MRT, dan ERL paling dekat
 
 ## Kandungan Website (Halaman)
 
 1. `/` (Home)
 - Header + tagline.
+- Panel `Waktu Solat & Stesen Terdekat` (auto detect lokasi):
+  - Auto detect kawasan (KL / Selangor)
+  - Papar waktu Subuh, Zohor, Asar, Maghrib, Isyak
+  - Papar stesen paling dekat secara keseluruhan (LRT/MRT/ERL)
+  - Papar jarak ke LRT terdekat
+  - Papar jarak ke MRT terdekat
+  - Papar jarak ke ERL terdekat
 - Filter bar:
   - Radius: `1km / 2km / 3km`
   - Line type: `All / LRT / MRT / ERL`
@@ -135,6 +145,7 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 - `GET /api/mosques?stationId=...&radius=...&sort=nearest|farthest`
 - `GET /api/distance?origin=lat,lng&dest=lat,lng` (haversine helper)
 - `GET /api/map-embed?origin=lat,lng&destination=lat,lng` (redirect ke Google Maps Embed Directions)
+- `GET /api/prayer-times?lat=...&lng=...` (waktu solat auto, KL/Selangor sahaja)
 
 ## Aliran Data & Logik Carian
 
@@ -151,7 +162,9 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 
 - Carian masjid: Google Places Nearby Search (server-side).
 - Jarak berjalan: Google Distance Matrix mode `walking` (server-side), fallback haversine bila API gagal/quota hit.
+- Waktu solat: API Aladhan (server-side) berdasarkan lokasi semasa.
 - Cache in-memory 10 minit berdasarkan kombinasi `stationId + radius + sort`.
+- Cache waktu solat in-memory 10 minit (berdasarkan koordinat dibundarkan).
 - Radius dihadkan kepada 1km-3km, result dihadkan maksimum 40.
 - Places/Distance dipanggil dari route server; client hanya panggil endpoint app sendiri.
 - Jika API key tiada/invalid, sistem guna fallback sample mosque data untuk demo UI.
@@ -172,7 +185,11 @@ https://<domain-anda>/api/mosques?stationId=kl-sentral&radius=2&sort=nearest
 - Pastikan `Maps Embed API` enabled.
 - Semak restriction domain API key untuk domain Vercel.
 
-4. Error Vercel pasal build/output/public
+4. Waktu solat tak keluar
+- Benarkan permission lokasi di browser.
+- Pastikan anda berada dalam kawasan KL/Selangor (fitur waktu solat kini fokus dua kawasan ini).
+
+5. Error Vercel pasal build/output/public
 - Pastikan `Framework Preset = Next.js`.
 - Jangan override `Output Directory`.
 - Redeploy dengan clear build cache.
