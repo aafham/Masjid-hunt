@@ -160,6 +160,22 @@
     "lng": 101.7158
   },
   {
+    "id": "bukit-jalil",
+    "name": "Bukit Jalil",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang/Sri Petaling",
+    "lat": 3.0587,
+    "lng": 101.6912
+  },
+  {
+    "id": "sri-petaling",
+    "name": "Sri Petaling",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang/Sri Petaling",
+    "lat": 3.0734,
+    "lng": 101.6937
+  },
+  {
     "id": "kwasa-damansara-kajang",
     "name": "Kwasa Damansara",
     "line_type": "MRT",

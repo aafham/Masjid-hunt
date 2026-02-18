@@ -22,11 +22,6 @@ type UserLocation = {
   lng: number;
 };
 
-type NearbyAnyStation = {
-  station: Station;
-  distanceMeters: number;
-};
-
 const stations = stationData as Station[];
 
 export default function LocationPrayerPanel() {
@@ -119,20 +114,6 @@ export default function LocationPrayerPanel() {
     return { lrt, mrt, erl, overall };
   }, [location]);
 
-  const nearestAllStations = useMemo(() => {
-    if (!location) {
-      return [];
-    }
-
-    const ranked: NearbyAnyStation[] = stations.map((station) => ({
-      station,
-      distanceMeters: haversineMeters(location.lat, location.lng, station.lat, station.lng)
-    }));
-
-    ranked.sort((a, b) => a.distanceMeters - b.distanceMeters);
-    return ranked.slice(0, 12);
-  }, [location]);
-
   return (
     <section className="mx-auto mt-4 w-full max-w-5xl px-4">
       <div className="rounded-xl border border-brand/20 bg-white p-4 shadow-sm">
@@ -178,32 +159,6 @@ export default function LocationPrayerPanel() {
               <DistanceBox title="LRT terdekat" nearStation={nearest?.lrt ?? null} />
               <DistanceBox title="MRT terdekat" nearStation={nearest?.mrt ?? null} />
               <DistanceBox title="ERL terdekat" nearStation={nearest?.erl ?? null} />
-            </div>
-
-            <div className="rounded-lg border border-brand/15 bg-white p-3">
-              <p className="text-sm font-semibold text-ink">
-                Semua stesen terdekat (LRT + MRT + ERL)
-              </p>
-              <p className="mt-1 text-xs text-slate-600">
-                Senarai ini berdasarkan jarak dari lokasi semasa, tidak bergantung pada data masjid/surau.
-              </p>
-
-              <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
-                {nearestAllStations.map((item) => (
-                  <div
-                    key={`${item.station.id}-nearby`}
-                    className="rounded-md border border-brand/10 bg-slate-50 px-3 py-2"
-                  >
-                    <p className="text-sm font-semibold text-ink">{item.station.name}</p>
-                    <p className="text-xs text-slate-600">
-                      {item.station.line_type} | {item.station.line_name}
-                    </p>
-                    <p className="text-xs text-brandDark">
-                      {formatDistance(item.distanceMeters)} dari lokasi semasa
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         ) : null}
