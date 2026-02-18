@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-base text-ink;
+}
+
+input,
+select,
+button {
+  @apply outline-none;
+}

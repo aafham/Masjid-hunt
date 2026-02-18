@@ -1,0 +1,66 @@
+[
+  {
+    "id": "kl-sentral",
+    "name": "KL Sentral",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.1357,
+    "lng": 101.688
+  },
+  {
+    "id": "masjid-jamek",
+    "name": "Masjid Jamek",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.1491,
+    "lng": 101.6965
+  },
+  {
+    "id": "klcc",
+    "name": "KLCC",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.1578,
+    "lng": 101.7123
+  },
+  {
+    "id": "pasar-seni",
+    "name": "Pasar Seni",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.1424,
+    "lng": 101.6953
+  },
+  {
+    "id": "muzium-negara",
+    "name": "Muzium Negara",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1379,
+    "lng": 101.6872
+  },
+  {
+    "id": "bukit-bintang",
+    "name": "Bukit Bintang",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.1468,
+    "lng": 101.7113
+  },
+  {
+    "id": "trx",
+    "name": "TRX",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.1422,
+    "lng": 101.719
+  },
+  {
+    "id": "putrajaya-cyberjaya",
+    "name": "Putrajaya & Cyberjaya",
+    "line_type": "ERL",
+    "line_name": "KLIA Transit",
+    "lat": 2.9264,
+    "lng": 101.678
+  }
+]

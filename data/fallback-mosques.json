@@ -1,0 +1,78 @@
+{
+  "kl-sentral": [
+    {
+      "placeId": "fallback-1",
+      "name": "Masjid Negara",
+      "lat": 3.1412,
+      "lng": 101.6918,
+      "address": "Jalan Perdana, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-2",
+      "name": "Masjid Jamek Sultan Abdul Samad",
+      "lat": 3.1495,
+      "lng": 101.6959,
+      "address": "Jalan Tun Perak, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-3",
+      "name": "Masjid Saidina Abu Bakar As Siddiq",
+      "lat": 3.1272,
+      "lng": 101.6871,
+      "address": "Bangsar, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-4",
+      "name": "Masjid Al-Bukhary",
+      "lat": 3.1514,
+      "lng": 101.687,
+      "address": "Jalan Hang Tuah, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-5",
+      "name": "Surau Menara 1 Sentrum",
+      "lat": 3.1307,
+      "lng": 101.6869,
+      "address": "Jalan Tun Sambanthan, Kuala Lumpur"
+    }
+  ],
+  "masjid-jamek": [
+    {
+      "placeId": "fallback-6",
+      "name": "Masjid India",
+      "lat": 3.1524,
+      "lng": 101.6997,
+      "address": "Jalan Masjid India, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-7",
+      "name": "Masjid Jamek Sultan Abdul Samad",
+      "lat": 3.1495,
+      "lng": 101.6959,
+      "address": "Jalan Tun Perak, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-8",
+      "name": "Masjid Negara",
+      "lat": 3.1412,
+      "lng": 101.6918,
+      "address": "Jalan Perdana, Kuala Lumpur"
+    }
+  ],
+  "klcc": [
+    {
+      "placeId": "fallback-9",
+      "name": "Asy-Syakirin KLCC",
+      "lat": 3.1579,
+      "lng": 101.7118,
+      "address": "KLCC, Kuala Lumpur"
+    },
+    {
+      "placeId": "fallback-10",
+      "name": "Masjid Jamek Kampung Baru",
+      "lat": 3.1663,
+      "lng": 101.7048,
+      "address": "Kampung Baru, Kuala Lumpur"
+    }
+  ]
+}
