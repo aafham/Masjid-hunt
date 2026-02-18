@@ -26,6 +26,9 @@ export default function ResultsExplorer({ stations, initialStationId, lockStatio
   const [lineType, setLineType] = useState<"ALL" | LineType>("ALL");
   const [sort, setSort] = useState<SortOrder>("nearest");
   const [selectedStationId, setSelectedStationId] = useState(initialStationId || stations[0]?.id || "");
+  const [searchScope, setSearchScope] = useState<"station" | "masjid">("station");
+  const [searchInput, setSearchInput] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -33,10 +36,44 @@ export default function ResultsExplorer({ stations, initialStationId, lockStatio
   const [total, setTotal] = useState(0);
   const [source, setSource] = useState<"google" | "fallback" | undefined>(undefined);
 
+  useEffect(() => {
+    const t = window.setTimeout(() => setDebouncedSearch(searchInput.trim().toLowerCase()), 250);
+    return () => window.clearTimeout(t);
+  }, [searchInput]);
+
+  const filteredStations = useMemo(() => {
+    return stations.filter((station) => {
+      if (lineType !== "ALL" && station.line_type !== lineType) {
+        return false;
+      }
+      if (searchScope !== "station" || !debouncedSearch) {
+        return true;
+      }
+      const haystack = `${station.name} ${station.line_name} ${station.line_type}`.toLowerCase();
+      return haystack.includes(debouncedSearch);
+    });
+  }, [stations, lineType, searchScope, debouncedSearch]);
+
+  useEffect(() => {
+    if (filteredStations.some((station) => station.id === selectedStationId) || !filteredStations[0]) {
+      return;
+    }
+    setSelectedStationId(filteredStations[0].id);
+  }, [filteredStations, selectedStationId]);
+
   const selectedStation = useMemo(
     () => stations.find((station) => station.id === selectedStationId) || stations[0],
     [stations, selectedStationId]
   );
+
+  const displayedMosques = useMemo(() => {
+    if (searchScope !== "masjid" || !debouncedSearch) {
+      return mosques;
+    }
+    return mosques.filter((mosque) => mosque.name.toLowerCase().includes(debouncedSearch));
+  }, [mosques, searchScope, debouncedSearch]);
+
+  const displayedTotal = searchScope === "masjid" && debouncedSearch ? displayedMosques.length : total;
 
   useEffect(() => {
     if (!selectedStationId) {
@@ -111,12 +148,28 @@ export default function ResultsExplorer({ stations, initialStationId, lockStatio
         onSortChange={setSort}
       />
 
+      <div className="grid grid-cols-1 gap-2 rounded-xl border border-brand/15 bg-white p-3 shadow-sm sm:grid-cols-[1fr_160px]">
+        <input
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+          placeholder={searchScope === "station" ? "Cari station" : "Cari masjid atau surau"}
+          className="w-full rounded-lg border border-brand/20 px-3 py-2 text-sm"
+        />
+        <select
+          value={searchScope}
+          onChange={(e) => setSearchScope(e.target.value as "station" | "masjid")}
+          className="w-full rounded-lg border border-brand/20 px-3 py-2 text-sm"
+        >
+          <option value="station">Station</option>
+          <option value="masjid">Masjid</option>
+        </select>
+      </div>
+
       {!lockStation ? (
         <StationPicker
-          stations={stations}
+          stations={filteredStations}
           selectedId={selectedStationId}
           onChange={setSelectedStationId}
-          lineType={lineType}
         />
       ) : (
         <div className="rounded-xl border border-brand/15 bg-white p-3 text-sm text-slate-700">
@@ -125,11 +178,11 @@ export default function ResultsExplorer({ stations, initialStationId, lockStatio
       )}
 
       <MosqueList
-        mosques={mosques}
+        mosques={displayedMosques}
         station={selectedStation}
         loading={loading}
         error={error}
-        total={total}
+        total={displayedTotal}
         source={source}
       />
     </div>
