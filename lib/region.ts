@@ -1,21 +1,14 @@
-export type PrayerArea = "Kuala Lumpur" | "Selangor";
+// Official zone names: https://www.e-solat.gov.my/ (verified 20 September 2026).
+// Coordinates alone do not identify a prayer zone reliably near district borders.
+export const PRAYER_ZONES = [
+  { code: "WLY01", area: "Kuala Lumpur & Putrajaya" },
+  { code: "SGR01", area: "Gombak, Petaling, Sepang, Hulu Langat, Hulu Selangor & Shah Alam" },
+  { code: "SGR02", area: "Kuala Selangor & Sabak Bernam" },
+  { code: "SGR03", area: "Klang & Kuala Langat" }
+] as const;
 
-export function detectPrayerArea(lat: number, lng: number): PrayerArea | null {
-  const isKualaLumpur =
-    lat >= 3.02 && lat <= 3.27 &&
-    lng >= 101.62 && lng <= 101.78;
+export type PrayerZone = (typeof PRAYER_ZONES)[number]["code"];
 
-  if (isKualaLumpur) {
-    return "Kuala Lumpur";
-  }
-
-  const isSelangor =
-    lat >= 2.73 && lat <= 3.84 &&
-    lng >= 100.7 && lng <= 101.99;
-
-  if (isSelangor) {
-    return "Selangor";
-  }
-
-  return null;
+export function getPrayerZone(code: string) {
+  return PRAYER_ZONES.find((zone) => zone.code === code);
 }

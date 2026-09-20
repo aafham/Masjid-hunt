@@ -1,74 +1,14 @@
 "use client";
-
-import { useMemo, useState } from "react";
+import { ArrowUpRight, Footprints, MapPin } from "lucide-react";
 import type { Mosque, Station } from "@/lib/types";
 import { formatDistance } from "@/lib/utils";
-
-type Props = {
-  mosque: Mosque;
-  station: Station;
-};
-
-export default function MosqueCard({ mosque, station }: Props) {
-  const [expandMap, setExpandMap] = useState(false);
-
-  const origin = `${station.lat},${station.lng}`;
-  const destination = `${mosque.lat},${mosque.lng}`;
-
-  const directionLink = useMemo(() => {
-    const url = new URL("https://www.google.com/maps/dir/");
-    url.searchParams.set("api", "1");
-    url.searchParams.set("origin", origin);
-    url.searchParams.set("destination", destination);
-    url.searchParams.set("travelmode", "walking");
-    return url.toString();
-  }, [origin, destination]);
-
-  const embedSrc = `/api/map-embed?origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}`;
-
-  return (
-    <article className="space-y-3 rounded-xl border border-brand/20 bg-white p-4 shadow-sm">
-      <div>
-        <h3 className="text-lg font-semibold text-ink">{mosque.name}</h3>
-        <p className="mt-1 text-sm font-medium text-brandDark">
-          {formatDistance(mosque.distanceMeters)}
-          {mosque.durationMinutes ? ` | ${mosque.durationMinutes} min berjalan` : ""}
-          {mosque.distanceType === "haversine_estimate" ? " | anggaran" : ""}
-        </p>
-        <p className="mt-1 text-sm text-slate-600">{mosque.address || "Alamat tidak tersedia"}</p>
-      </div>
-
-      <a
-        href={directionLink}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-flex rounded-lg bg-brand px-3 py-2 text-sm font-semibold text-white hover:bg-brandDark"
-      >
-        Directions
-      </a>
-
-      <div>
-        <button
-          type="button"
-          onClick={() => setExpandMap((value) => !value)}
-          className="mb-2 text-sm font-medium text-brandDark underline"
-        >
-          {expandMap ? "Sembunyikan map preview" : "Papar map preview"}
-        </button>
-
-        {expandMap ? (
-          <div className="overflow-hidden rounded-lg border border-brand/15">
-            <iframe
-              src={embedSrc}
-              className="h-[200px] w-full"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              title={`Route dari ${station.name} ke ${mosque.name}`}
-            />
-          </div>
-        ) : null}
-      </div>
-    </article>
-  );
+type Props = { mosque: Mosque; station: Station; index: number; selected: boolean; onSelect: () => void };
+export default function MosqueCard({ mosque, station, index, selected, onSelect }: Props) {
+  const params = new URLSearchParams({ api: "1", origin: station.lat + "," + station.lng, destination: mosque.lat + "," + mosque.lng, travelmode: "walking" });
+  const estimated = mosque.distanceType !== "walking_api";
+  return <article id={"mosque-" + index} className={"mosque-card" + (selected ? " selected" : "")}>
+    <div className="mosque-card-heading"><span className="result-number">{String(index + 1).padStart(2, "0")}</span><div><h3>{mosque.name}</h3><p className="mosque-address"><MapPin size={14} aria-hidden />{mosque.address || "Alamat belum tersedia; semak pin lokasi."}</p></div></div>
+    <div className="distance-row"><Footprints size={17} aria-hidden /><strong>{formatDistance(mosque.distanceMeters)}</strong><span>{estimated ? "anggaran garis lurus" : mosque.durationMinutes ? mosque.durationMinutes + " min berjalan" : "laluan berjalan"}</span></div>
+    <div className="card-actions"><a href={"https://www.google.com/maps/dir/?" + params} target="_blank" rel="noreferrer" className="button-primary" aria-label={"Laluan berjalan dari " + station.name + " ke " + mosque.name}>Laluan berjalan <ArrowUpRight size={16} aria-hidden /></a><button type="button" className="map-select-button" aria-pressed={selected} onClick={onSelect}>Lihat di peta</button></div>
+  </article>;
 }

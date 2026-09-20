@@ -1,64 +1,10 @@
 "use client";
-
-import type { LineType, SortOrder } from "@/lib/types";
-
-type Props = {
-  radiusKm: number;
-  onRadiusChange: (value: number) => void;
-  lineType: "ALL" | LineType;
-  onLineTypeChange: (value: "ALL" | LineType) => void;
-  sort: SortOrder;
-  onSortChange: (value: SortOrder) => void;
-};
-
-export default function FilterBar({
-  radiusKm,
-  onRadiusChange,
-  lineType,
-  onLineTypeChange,
-  sort,
-  onSortChange
-}: Props) {
-  return (
-    <div className="grid grid-cols-1 gap-3 rounded-xl border border-brand/15 bg-white p-3 shadow-sm sm:grid-cols-3">
-      <label className="text-sm">
-        <span className="mb-1 block font-medium">Radius</span>
-        <select
-          value={radiusKm}
-          onChange={(e) => onRadiusChange(Number(e.target.value))}
-          className="w-full rounded-lg border border-brand/20 px-3 py-2"
-        >
-          <option value={1}>1 km</option>
-          <option value={2}>2 km</option>
-          <option value={3}>3 km</option>
-        </select>
-      </label>
-
-      <label className="text-sm">
-        <span className="mb-1 block font-medium">Line Type</span>
-        <select
-          value={lineType}
-          onChange={(e) => onLineTypeChange(e.target.value as "ALL" | LineType)}
-          className="w-full rounded-lg border border-brand/20 px-3 py-2"
-        >
-          <option value="ALL">All</option>
-          <option value="LRT">LRT</option>
-          <option value="MRT">MRT</option>
-          <option value="ERL">ERL</option>
-        </select>
-      </label>
-
-      <label className="text-sm">
-        <span className="mb-1 block font-medium">Sort</span>
-        <select
-          value={sort}
-          onChange={(e) => onSortChange(e.target.value as SortOrder)}
-          className="w-full rounded-lg border border-brand/20 px-3 py-2"
-        >
-          <option value="nearest">Nearest</option>
-          <option value="farthest">Farthest</option>
-        </select>
-      </label>
-    </div>
-  );
+import { SlidersHorizontal } from "lucide-react";
+import type { SortOrder } from "@/lib/types";
+type Props = { radiusKm: number; onRadiusChange: (value: number) => void; sort: SortOrder; onSortChange: (value: SortOrder) => void; mosqueQuery: string; onQueryChange: (value: string) => void };
+export default function FilterBar({ radiusKm, onRadiusChange, sort, onSortChange, mosqueQuery, onQueryChange }: Props) {
+  return <div className="filters">
+    <fieldset className="radius-filter"><legend>Jarak maksimum</legend><div className="radius-options">{[1, 2, 3].map(radius => <button type="button" key={radius} aria-pressed={radiusKm === radius} onClick={() => onRadiusChange(radius)}>{radius} km</button>)}</div></fieldset>
+    <details className="extra-filters"><summary><SlidersHorizontal size={17} aria-hidden /> Tapis hasil</summary><div className="extra-filter-fields"><label htmlFor="mosque-query">Nama masjid dalam hasil ini<input id="mosque-query" type="search" placeholder="Cari masjid atau surau" value={mosqueQuery} onChange={e => onQueryChange(e.target.value)} /></label><label htmlFor="sort-results">Susun mengikut<select id="sort-results" value={sort} onChange={e => onSortChange(e.target.value as SortOrder)}><option value="nearest">Terdekat dahulu</option><option value="farthest">Terjauh dahulu</option></select></label></div></details>
+  </div>;
 }

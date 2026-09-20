@@ -1,75 +1,10 @@
-"use client";
-
-import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
-import type { LineType } from "@/lib/types";
-import stationsData from "@/data/stations.my.json";
-
+import type { Metadata } from "next";
+import StationDirectory from "@/components/StationDirectory";
+import { getStations } from "@/lib/stations";
+export const metadata: Metadata = { title: "Semua stesen & laluan", description: "Pilih laluan LRT Kelana Jaya, Ampang, Sri Petaling, Shah Alam, MRT Kajang, Putrajaya dan ERL untuk mencari masjid berhampiran.", alternates: { canonical: "/stations" } };
 export default function StationsPage() {
-  const stations = stationsData;
-  const [lineType, setLineType] = useState<"ALL" | LineType>("ALL");
-  const [query, setQuery] = useState("");
-  const [debounced, setDebounced] = useState("");
-
-  useEffect(() => {
-    const t = window.setTimeout(() => setDebounced(query.trim().toLowerCase()), 250);
-    return () => window.clearTimeout(t);
-  }, [query]);
-
-  const filtered = useMemo(() => {
-    return stations.filter((station) => {
-      if (lineType !== "ALL" && station.line_type !== lineType) {
-        return false;
-      }
-      if (!debounced) {
-        return true;
-      }
-      return `${station.name} ${station.line_name}`.toLowerCase().includes(debounced);
-    });
-  }, [stations, lineType, debounced]);
-
-  return (
-    <section className="space-y-4">
-      <h2 className="text-lg font-semibold">Browse All Stations</h2>
-      <div className="grid grid-cols-1 gap-3 rounded-xl border border-brand/15 bg-white p-3 shadow-sm sm:grid-cols-2">
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Cari station"
-          className="rounded-lg border border-brand/20 px-3 py-2 text-sm"
-        />
-        <select
-          value={lineType}
-          onChange={(e) => setLineType(e.target.value as "ALL" | LineType)}
-          className="rounded-lg border border-brand/20 px-3 py-2 text-sm"
-        >
-          <option value="ALL">All</option>
-          <option value="LRT">LRT</option>
-          <option value="MRT">MRT</option>
-          <option value="ERL">ERL</option>
-        </select>
-      </div>
-
-      <div className="grid grid-cols-1 gap-3">
-        {filtered.map((station) => (
-          <Link
-            key={station.id}
-            href={`/station/${station.id}`}
-            className="rounded-xl border border-brand/15 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow"
-          >
-            <h3 className="font-semibold text-ink">{station.name}</h3>
-            <p className="text-sm text-slate-600">
-              {station.line_type} | {station.line_name}
-            </p>
-          </Link>
-        ))}
-      </div>
-
-      {filtered.length === 0 ? (
-        <p className="rounded-xl border border-brand/15 bg-white p-4 text-sm text-slate-600">
-          Tiada station sepadan.
-        </p>
-      ) : null}
-    </section>
-  );
+  return <><section className="directory-heading"><p className="eyebrow">RANGKAIAN TRANSIT ANDA</p><h1>Setiap laluan,<br /><span>satu persinggahan.</span></h1><p>Pilih kategori dan laluan, kemudian tekan stesen anda.</p></section>
+    <StationDirectory stations={getStations()} />
+    <section className="coverage-note" aria-labelledby="coverage-title"><h2 id="coverage-title">Liputan yang jelas, perjalanan lebih mudah.</h2><p>Senarai meliputi laluan beroperasi di Lembah Klang dan ERL, termasuk 20 stesen Laluan Shah Alam. MRT3 dan stesen yang belum dibuka tidak dimasukkan sebagai pilihan perjalanan.</p><p>Disemak 20 September 2026. Stesen pertukaran mungkin mempunyai lebih daripada satu pilihan laluan.</p><div><a href="https://developer.data.gov.my/realtime-api/gtfs-static" target="_blank" rel="noreferrer">Data GTFS Prasarana ↗</a><a href="https://www.prasarana.com.my/rapid-rail/" target="_blank" rel="noreferrer">Maklumat operasi Prasarana ↗</a><a href="https://www.kliaekspres.com/" target="_blank" rel="noreferrer">Maklumat ERL ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Koordinat ERL © OpenStreetMap ↗</a></div></section>
+  </>;
 }

@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-20",
+  "erlCoordinatesAsOf": "2026-05-31T22:37:44Z",
+  "sourceUrls": [
+    "https://developer.data.gov.my/realtime-api/gtfs-static",
+    "https://api.data.gov.my/gtfs-static/prasarana?category=rapid-rail-kl",
+    "https://www.prasarana.com.my/rapid-rail/",
+    "https://www.mymrt.com.my/projects/putrajaya-line/",
+    "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/perkhidmatan-lrt3-mula-beroperasi-29-jun-2026/",
+    "https://www.kliaekspres.com/products-fares/klia-transit/",
+    "https://www.kliaekspres.com/products-fares/klia-ekspres/",
+    "https://www.openstreetmap.org/copyright"
+  ],
+  "lines": [
+    { "id": "KJ", "name": "LRT Kelana Jaya", "type": "LRT", "color": "#D50032", "status": "operational", "stationCount": 37, "sourceUrl": "https://www.prasarana.com.my/rapid-rail/" },
+    { "id": "AG", "name": "LRT Ampang", "type": "LRT", "color": "#E57200", "status": "operational", "stationCount": 18, "sourceUrl": "https://www.prasarana.com.my/rapid-rail/" },
+    { "id": "PH", "name": "LRT Sri Petaling", "type": "LRT", "color": "#76232F", "status": "operational", "stationCount": 29, "sourceUrl": "https://www.prasarana.com.my/rapid-rail/" },
+    { "id": "SA", "name": "LRT Shah Alam", "type": "LRT", "color": "#00A9E0", "status": "operational", "stationCount": 20, "openingDate": "2026-06-29", "sourceUrl": "https://www.prasarana.com.my/rapid-rail/" },
+    { "id": "KGL", "name": "MRT Kajang", "type": "MRT", "color": "#047940", "status": "operational", "stationCount": 29, "sourceUrl": "https://www.prasarana.com.my/rapid-rail/" },
+    { "id": "PYL", "name": "MRT Putrajaya", "type": "MRT", "color": "#FFCD00", "status": "operational", "stationCount": 36, "sourceUrl": "https://www.mymrt.com.my/projects/putrajaya-line/" },
+    { "id": "ERL_TRANSIT", "name": "KLIA Transit", "type": "ERL", "color": "#0099AA", "status": "operational", "stationCount": 6, "sourceUrl": "https://www.kliaekspres.com/products-fares/klia-transit/" },
+    { "id": "ERL_EKSPRES", "name": "KLIA Ekspres", "type": "ERL", "color": "#822B8F", "status": "operational", "stationCount": 3, "sourceUrl": "https://www.kliaekspres.com/products-fares/klia-ekspres/" }
+  ],
+  "excludedPlannedLines": [
+    { "name": "MRT3 Circle Line", "reason": "Laluan dirancang; tidak disenaraikan sebagai stesen beroperasi.", "sourceUrl": "https://www.mymrt.com.my/projects/mrt3-circle-line/" }
+  ],
+  "notes": [
+    "Bilangan ialah penyertaan stesen bagi setiap laluan; stesen pertukaran boleh muncul dalam lebih daripada satu laluan.",
+    "Laluan Shah Alam: hanya 20 stesen dalam perkhidmatan GTFS. Stesen tambahan yang belum dibuka tidak disertakan.",
+    "Laluan Putrajaya: 36 stesen beroperasi; lima stesen provisional tidak disertakan.",
+    "Koordinat Rapid Rail daripada GTFS Prasarana/data.gov.my. Koordinat ERL daripada OpenStreetMap contributors (ODbL), snapshot 31 Mei 2026 diperoleh pada tarikh semakan; keahlian laluan disahkan melalui operator ERL.",
+    "Koordinat merujuk titik stesen, bukan pintu keluar atau laluan pejalan kaki yang telah disahkan.",
+    "Status beroperasi ialah status laluan semasa semakan, bukan maklumat gangguan perkhidmatan langsung."
+  ]
+}

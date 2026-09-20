@@ -1,0 +1,8 @@
+[
+  { "id": "kl-sentral-erl", "name": "KL Sentral", "station_code": "KE1/KT1", "lat": 3.134283, "lng": 101.686385, "express": true, "source": "https://www.openstreetmap.org/way/638688527" },
+  { "id": "bandar-tasik-selatan", "name": "Bandar Tasik Selatan", "station_code": "KT2", "lat": 3.0763048, "lng": 101.7103241, "express": false, "source": "https://www.openstreetmap.org/way/43191005" },
+  { "id": "putrajaya-cyberjaya", "name": "Putrajaya & Cyberjaya", "station_code": "KT3", "lat": 2.9318305, "lng": 101.6710183, "express": false, "source": "https://www.openstreetmap.org/way/1164909159" },
+  { "id": "salak-tinggi", "name": "Salak Tinggi", "station_code": "KT4", "lat": 2.825397, "lng": 101.7130747, "express": false, "source": "https://www.openstreetmap.org/way/165373122" },
+  { "id": "klia", "name": "KLIA Terminal 1", "station_code": "KE2/KT5", "lat": 2.7547334, "lng": 101.7046397, "express": true, "source": "https://www.openstreetmap.org/node/6763983630" },
+  { "id": "klia2", "name": "KLIA Terminal 2", "station_code": "KE3/KT6", "lat": 2.7445265, "lng": 101.6851796, "express": true, "source": "https://www.openstreetmap.org/way/1033454811" }
+]
