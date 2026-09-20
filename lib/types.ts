@@ -5,6 +5,9 @@ export type Station = {
   name: string;
   line_type: LineType;
   line_name: string;
+  line_id?: string;
+  station_code?: string;
+  source?: string;
   lat: number;
   lng: number;
 };
@@ -18,6 +21,8 @@ export type Mosque = {
   distanceMeters?: number;
   durationMinutes?: number;
   distanceType: "walking_api" | "haversine_estimate";
+  source?: "google" | "openstreetmap";
+  osmUrl?: string;
 };
 
 export type SortOrder = "nearest" | "farthest";

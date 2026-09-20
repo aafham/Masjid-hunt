@@ -1,7 +1,3 @@
-export default function NotFound() {
-  return (
-    <div className="rounded-xl border border-brand/20 bg-white p-6 text-sm text-slate-700">
-      Halaman tidak dijumpai.
-    </div>
-  );
-}
+import Link from "next/link";
+import { MapPinOff } from "lucide-react";
+export default function NotFound() { return <section className="empty-state"><MapPinOff size={34} aria-hidden /><h1>Persinggahan ini tidak dijumpai.</h1><p>Pilih stesen daripada senarai terkini untuk meneruskan carian.</p><Link className="button-primary" href="/stations">Lihat semua stesen</Link></section>; }

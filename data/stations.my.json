@@ -4,711 +4,1957 @@
     "name": "Gombak",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.2376,
-    "lng": 101.7244
+    "lat": 3.231793,
+    "lng": 101.724427,
+    "line_id": "KJ",
+    "station_code": "KJ1",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-melati-kj",
+    "name": "Taman Melati",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.219558,
+    "lng": 101.72197,
+    "line_id": "KJ",
+    "station_code": "KJ2",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "wangsa-maju-kj",
+    "name": "Wangsa Maju",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.205751,
+    "lng": 101.731796,
+    "line_id": "KJ",
+    "station_code": "KJ3",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sri-rampai-kj",
+    "name": "Sri Rampai",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.199176,
+    "lng": 101.73747,
+    "line_id": "KJ",
+    "station_code": "KJ4",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "setiawangsa",
     "name": "Setiawangsa",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1742,
-    "lng": 101.7368
+    "lat": 3.17576,
+    "lng": 101.73584,
+    "line_id": "KJ",
+    "station_code": "KJ5",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "jelatek-kj",
+    "name": "Jelatek",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.167204,
+    "lng": 101.735344,
+    "line_id": "KJ",
+    "station_code": "KJ6",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "dato-keramat-kj",
+    "name": "Dato' Keramat",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.16509,
+    "lng": 101.73184,
+    "line_id": "KJ",
+    "station_code": "KJ7",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "damai-kj",
+    "name": "Damai",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.164406,
+    "lng": 101.724489,
+    "line_id": "KJ",
+    "station_code": "KJ8",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "ampang-park-lrt",
-    "name": "Ampang Park (LRT)",
+    "name": "Ampang Park",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1613,
-    "lng": 101.7191
+    "lat": 3.159894,
+    "lng": 101.719017,
+    "line_id": "KJ",
+    "station_code": "KJ9",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "klcc",
     "name": "KLCC",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1578,
-    "lng": 101.7123
+    "lat": 3.158935,
+    "lng": 101.713287,
+    "line_id": "KJ",
+    "station_code": "KJ10",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kampung-baru-kj",
+    "name": "Kampung Baru",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.161386,
+    "lng": 101.706608,
+    "line_id": "KJ",
+    "station_code": "KJ11",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "dang-wangi-kj",
+    "name": "Dang Wangi",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.156942,
+    "lng": 101.701975,
+    "line_id": "KJ",
+    "station_code": "KJ12",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "masjid-jamek",
     "name": "Masjid Jamek",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1491,
-    "lng": 101.6965
+    "lat": 3.149714,
+    "lng": 101.696815,
+    "line_id": "KJ",
+    "station_code": "KJ13",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "pasar-seni",
     "name": "Pasar Seni",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1424,
-    "lng": 101.6953
+    "lat": 3.142439,
+    "lng": 101.69531,
+    "line_id": "KJ",
+    "station_code": "KJ14",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kl-sentral",
     "name": "KL Sentral",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1357,
-    "lng": 101.688
+    "lat": 3.13442,
+    "lng": 101.68625,
+    "line_id": "KJ",
+    "station_code": "KJ15",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bangsar",
     "name": "Bangsar",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1288,
-    "lng": 101.678
-  },
-  {
-    "id": "universiti",
-    "name": "Universiti",
-    "line_type": "LRT",
-    "line_name": "LRT Kelana Jaya",
-    "lat": 3.1144,
-    "lng": 101.6617
-  },
-  {
-    "id": "kerinchi",
-    "name": "Kerinchi",
-    "line_type": "LRT",
-    "line_name": "LRT Kelana Jaya",
-    "lat": 3.1122,
-    "lng": 101.6674
+    "lat": 3.127588,
+    "lng": 101.679062,
+    "line_id": "KJ",
+    "station_code": "KJ16",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "abdullah-hukum",
     "name": "Abdullah Hukum",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1189,
-    "lng": 101.6694
+    "lat": 3.118735,
+    "lng": 101.672897,
+    "line_id": "KJ",
+    "station_code": "KJ17",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kerinchi",
+    "name": "Kerinchi",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.115506,
+    "lng": 101.668572,
+    "line_id": "KJ",
+    "station_code": "KJ18",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "universiti",
+    "name": "Universiti",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.114616,
+    "lng": 101.661639,
+    "line_id": "KJ",
+    "station_code": "KJ19",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-jaya",
     "name": "Taman Jaya",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1033,
-    "lng": 101.6371
+    "lat": 3.104086,
+    "lng": 101.645248,
+    "line_id": "KJ",
+    "station_code": "KJ20",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "asia-jaya",
     "name": "Asia Jaya",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1048,
-    "lng": 101.6378
+    "lat": 3.104343,
+    "lng": 101.637695,
+    "line_id": "KJ",
+    "station_code": "KJ21",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-paramount-kj",
+    "name": "Taman Paramount",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.104716,
+    "lng": 101.623192,
+    "line_id": "KJ",
+    "station_code": "KJ22",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-bahagia-kj",
+    "name": "Taman Bahagia",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.11079,
+    "lng": 101.612856,
+    "line_id": "KJ",
+    "station_code": "KJ23",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kelana-jaya",
     "name": "Kelana Jaya",
     "line_type": "LRT",
     "line_name": "LRT Kelana Jaya",
-    "lat": 3.1127,
-    "lng": 101.6045
+    "lat": 3.112497,
+    "lng": 101.6043,
+    "line_id": "KJ",
+    "station_code": "KJ24",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "lembah-subang-kj",
+    "name": "Lembah Subang",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.112094,
+    "lng": 101.591034,
+    "line_id": "KJ",
+    "station_code": "KJ25",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ara-damansara-kj",
+    "name": "Ara Damansara",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.108643,
+    "lng": 101.586372,
+    "line_id": "KJ",
+    "station_code": "KJ26",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "glenmarie-kj",
+    "name": "Glenmarie",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.094732,
+    "lng": 101.590622,
+    "line_id": "KJ",
+    "station_code": "KJ27",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "subang-jaya-kj",
+    "name": "Subang Jaya",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.08466,
+    "lng": 101.588127,
+    "line_id": "KJ",
+    "station_code": "KJ28",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ss-15-kj",
+    "name": "SS 15",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.075972,
+    "lng": 101.585983,
+    "line_id": "KJ",
+    "station_code": "KJ29",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ss-18-kj",
+    "name": "SS 18",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.067182,
+    "lng": 101.585945,
+    "line_id": "KJ",
+    "station_code": "KJ30",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "usj-7-kj",
+    "name": "USJ 7",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.054956,
+    "lng": 101.592194,
+    "line_id": "KJ",
+    "station_code": "KJ31",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taipan-kj",
+    "name": "Taipan",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.04815,
+    "lng": 101.590233,
+    "line_id": "KJ",
+    "station_code": "KJ32",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "wawasan-kj",
+    "name": "Wawasan",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.035062,
+    "lng": 101.588348,
+    "line_id": "KJ",
+    "station_code": "KJ33",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "usj-21-kj",
+    "name": "USJ 21",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.029881,
+    "lng": 101.581711,
+    "line_id": "KJ",
+    "station_code": "KJ34",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "alam-megah-kj",
+    "name": "Alam Megah",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.023151,
+    "lng": 101.572029,
+    "line_id": "KJ",
+    "station_code": "KJ35",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "subang-alam-kj",
+    "name": "Subang Alam",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 3.009421,
+    "lng": 101.572281,
+    "line_id": "KJ",
+    "station_code": "KJ36",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "putra-heights-kj",
+    "name": "Putra Heights",
+    "line_type": "LRT",
+    "line_name": "LRT Kelana Jaya",
+    "lat": 2.996227,
+    "lng": 101.575462,
+    "line_id": "KJ",
+    "station_code": "KJ37",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sentul-timur",
     "name": "Sentul Timur",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1875,
-    "lng": 101.6956
+    "line_name": "LRT Ampang",
+    "lat": 3.185897,
+    "lng": 101.695217,
+    "line_id": "AG",
+    "station_code": "AG1",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sentul-ag",
+    "name": "Sentul",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.178484,
+    "lng": 101.695542,
+    "line_id": "AG",
+    "station_code": "AG2",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "titiwangsa-lrt",
-    "name": "Titiwangsa (LRT)",
+    "name": "Titiwangsa",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1748,
-    "lng": 101.6954
+    "line_name": "LRT Ampang",
+    "lat": 3.173497,
+    "lng": 101.695367,
+    "line_id": "AG",
+    "station_code": "AG3",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pwtc-ag",
+    "name": "PWTC",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.166333,
+    "lng": 101.693586,
+    "line_id": "AG",
+    "station_code": "AG4",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sultan-ismail-ag",
+    "name": "Sultan Ismail",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.161245,
+    "lng": 101.694109,
+    "line_id": "AG",
+    "station_code": "AG5",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandaraya-ag",
+    "name": "Bandaraya",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.155567,
+    "lng": 101.694485,
+    "line_id": "AG",
+    "station_code": "AG6",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "masjid-jamek-ag",
+    "name": "Masjid Jamek",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.14927,
+    "lng": 101.696377,
+    "line_id": "AG",
+    "station_code": "AG7",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "plaza-rakyat",
     "name": "Plaza Rakyat",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1432,
-    "lng": 101.7037
+    "line_name": "LRT Ampang",
+    "lat": 3.144049,
+    "lng": 101.702105,
+    "line_id": "AG",
+    "station_code": "AG8",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "hang-tuah-ag",
+    "name": "Hang Tuah",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.140012,
+    "lng": 101.705984,
+    "line_id": "AG",
+    "station_code": "AG9",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "pudu",
     "name": "Pudu",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1424,
-    "lng": 101.7129
-  },
-  {
-    "id": "maluri-lrt",
-    "name": "Maluri (LRT)",
-    "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1248,
-    "lng": 101.727
+    "line_name": "LRT Ampang",
+    "lat": 3.134879,
+    "lng": 101.711957,
+    "line_id": "AG",
+    "station_code": "AG10",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "chan-sow-lin-lrt",
-    "name": "Chan Sow Lin (LRT)",
+    "name": "Chan Sow Lin",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.1332,
-    "lng": 101.7158
+    "line_name": "LRT Ampang",
+    "lat": 3.128105,
+    "lng": 101.715637,
+    "line_id": "AG",
+    "station_code": "AG11",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "miharja-ag",
+    "name": "Miharja",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.120973,
+    "lng": 101.717922,
+    "line_id": "AG",
+    "station_code": "AG12",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "maluri-lrt",
+    "name": "Maluri",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.12329,
+    "lng": 101.727283,
+    "line_id": "AG",
+    "station_code": "AG13",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pandan-jaya-ag",
+    "name": "Pandan Jaya",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.130141,
+    "lng": 101.739122,
+    "line_id": "AG",
+    "station_code": "AG14",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pandan-indah-ag",
+    "name": "Pandan Indah",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.134581,
+    "lng": 101.746509,
+    "line_id": "AG",
+    "station_code": "AG15",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "cempaka-ag",
+    "name": "Cempaka",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.138324,
+    "lng": 101.752979,
+    "line_id": "AG",
+    "station_code": "AG16",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "cahaya-ag",
+    "name": "Cahaya",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.140575,
+    "lng": 101.756677,
+    "line_id": "AG",
+    "station_code": "AG17",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ampang-ag",
+    "name": "Ampang",
+    "line_type": "LRT",
+    "line_name": "LRT Ampang",
+    "lat": 3.150318,
+    "lng": 101.760049,
+    "line_id": "AG",
+    "station_code": "AG18",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sentul-timur-ph",
+    "name": "Sentul Timur",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.185897,
+    "lng": 101.695217,
+    "line_id": "PH",
+    "station_code": "SP1",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sentul-ph",
+    "name": "Sentul",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.178484,
+    "lng": 101.695542,
+    "line_id": "PH",
+    "station_code": "SP2",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "titiwangsa-ph",
+    "name": "Titiwangsa",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.173497,
+    "lng": 101.695367,
+    "line_id": "PH",
+    "station_code": "SP3",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pwtc-ph",
+    "name": "PWTC",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.166333,
+    "lng": 101.693586,
+    "line_id": "PH",
+    "station_code": "SP4",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sultan-ismail-ph",
+    "name": "Sultan Ismail",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.161245,
+    "lng": 101.694109,
+    "line_id": "PH",
+    "station_code": "SP5",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandaraya-ph",
+    "name": "Bandaraya",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.155567,
+    "lng": 101.694485,
+    "line_id": "PH",
+    "station_code": "SP6",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "masjid-jamek-ph",
+    "name": "Masjid Jamek",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.14927,
+    "lng": 101.696377,
+    "line_id": "PH",
+    "station_code": "SP7",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "plaza-rakyat-ph",
+    "name": "Plaza Rakyat",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.144049,
+    "lng": 101.702105,
+    "line_id": "PH",
+    "station_code": "SP8",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "hang-tuah-ph",
+    "name": "Hang Tuah",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.140012,
+    "lng": 101.705984,
+    "line_id": "PH",
+    "station_code": "SP9",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pudu-ph",
+    "name": "Pudu",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.134879,
+    "lng": 101.711957,
+    "line_id": "PH",
+    "station_code": "SP10",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "chan-sow-lin-ph",
+    "name": "Chan Sow Lin",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.128105,
+    "lng": 101.715637,
+    "line_id": "PH",
+    "station_code": "SP11",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "cheras-ph",
+    "name": "Cheras",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.112609,
+    "lng": 101.714178,
+    "line_id": "PH",
+    "station_code": "SP12",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "salak-selatan-ph",
+    "name": "Salak Selatan",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.102201,
+    "lng": 101.706179,
+    "line_id": "PH",
+    "station_code": "SP13",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-tun-razak-ph",
+    "name": "Bandar Tun Razak",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.089576,
+    "lng": 101.712466,
+    "line_id": "PH",
+    "station_code": "SP14",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-tasik-selatan-ph",
+    "name": "Bandar Tasik Selatan",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.076058,
+    "lng": 101.711107,
+    "line_id": "PH",
+    "station_code": "SP15",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sungai-besi-ph",
+    "name": "Sungai Besi",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.063842,
+    "lng": 101.708062,
+    "line_id": "PH",
+    "station_code": "SP16",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bukit-jalil",
     "name": "Bukit Jalil",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.0587,
-    "lng": 101.6912
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.058196,
+    "lng": 101.692125,
+    "line_id": "PH",
+    "station_code": "SP17",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sri-petaling",
     "name": "Sri Petaling",
     "line_type": "LRT",
-    "line_name": "LRT Ampang/Sri Petaling",
-    "lat": 3.0734,
-    "lng": 101.6937
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.061445,
+    "lng": 101.687074,
+    "line_id": "PH",
+    "station_code": "SP18",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "awan-besar-ph",
+    "name": "Awan Besar",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.062131,
+    "lng": 101.670555,
+    "line_id": "PH",
+    "station_code": "SP19",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "muhibbah-ph",
+    "name": "Muhibbah",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.062229,
+    "lng": 101.662552,
+    "line_id": "PH",
+    "station_code": "SP20",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "alam-sutera-ph",
+    "name": "Alam Sutera",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.0547,
+    "lng": 101.656468,
+    "line_id": "PH",
+    "station_code": "SP21",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kinrara-bk5-ph",
+    "name": "Kinrara BK5",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.050506,
+    "lng": 101.644294,
+    "line_id": "PH",
+    "station_code": "SP22",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ioi-puchong-jaya-ph",
+    "name": "IOI Puchong Jaya",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.048101,
+    "lng": 101.62095,
+    "line_id": "PH",
+    "station_code": "SP24",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pusat-bandar-puchong-ph",
+    "name": "Pusat Bandar Puchong",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.033194,
+    "lng": 101.616057,
+    "line_id": "PH",
+    "station_code": "SP25",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-perindustrian-puchong-ph",
+    "name": "Taman Perindustrian Puchong",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.022814,
+    "lng": 101.613514,
+    "line_id": "PH",
+    "station_code": "SP26",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-puteri-ph",
+    "name": "Bandar Puteri",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.017111,
+    "lng": 101.612855,
+    "line_id": "PH",
+    "station_code": "SP27",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "puchong-perdana-ph",
+    "name": "Puchong Perdana",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 3.007913,
+    "lng": 101.605021,
+    "line_id": "PH",
+    "station_code": "SP28",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "puchong-prima-ph",
+    "name": "Puchong Prima",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 2.999808,
+    "lng": 101.596692,
+    "line_id": "PH",
+    "station_code": "SP29",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "putra-heights-ph",
+    "name": "Putra Heights",
+    "line_type": "LRT",
+    "line_name": "LRT Sri Petaling",
+    "lat": 2.996016,
+    "lng": 101.575521,
+    "line_id": "PH",
+    "station_code": "SP31",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-utama-sa",
+    "name": "Bandar Utama",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.144722,
+    "lng": 101.618611,
+    "line_id": "SA",
+    "station_code": "SA1",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kayu-ara-sa",
+    "name": "Kayu Ara",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.134722,
+    "lng": 101.616667,
+    "line_id": "SA",
+    "station_code": "SA2",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-utama-11-sa",
+    "name": "Bandar Utama 11",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.133333,
+    "lng": 101.604444,
+    "line_id": "SA",
+    "station_code": "SA3",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "damansara-idaman-sa",
+    "name": "Damansara Idaman",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.122778,
+    "lng": 101.594167,
+    "line_id": "SA",
+    "station_code": "SA5",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "subang-sa",
+    "name": "Subang",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.106111,
+    "lng": 101.591111,
+    "line_id": "SA",
+    "station_code": "SA6",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "glenmarie-2-sa",
+    "name": "Glenmarie 2",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.095278,
+    "lng": 101.588611,
+    "line_id": "SA",
+    "station_code": "SA7",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kerjaya-sa",
+    "name": "Kerjaya",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.082222,
+    "lng": 101.561944,
+    "line_id": "SA",
+    "station_code": "SA9",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "stadium-shah-alam-sa",
+    "name": "Stadium Shah Alam",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.079722,
+    "lng": 101.548889,
+    "line_id": "SA",
+    "station_code": "SA10",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "dato-menteri-sa",
+    "name": "Dato' Menteri - SA Sentral",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.069722,
+    "lng": 101.521111,
+    "line_id": "SA",
+    "station_code": "SA12",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "uitm-shah-alam-sa",
+    "name": "UiTM Shah Alam",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.0625,
+    "lng": 101.501111,
+    "line_id": "SA",
+    "station_code": "SA14",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "seksyen-7-sa",
+    "name": "Seksyen 7",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.067222,
+    "lng": 101.486667,
+    "line_id": "SA",
+    "station_code": "SA15",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-baru-klang-sa",
+    "name": "Bandar Baru Klang",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.0625,
+    "lng": 101.465556,
+    "line_id": "SA",
+    "station_code": "SA17",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pasar-klang-sa",
+    "name": "Pasar Klang",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.067778,
+    "lng": 101.450833,
+    "line_id": "SA",
+    "station_code": "SA18",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "jalan-meru-sa",
+    "name": "Jalan Meru",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.058889,
+    "lng": 101.451944,
+    "line_id": "SA",
+    "station_code": "SA19",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "jambatan-kota-sa",
+    "name": "Jambatan Kota",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.047222,
+    "lng": 101.4475,
+    "line_id": "SA",
+    "station_code": "SA20",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-selatan-sa",
+    "name": "Taman Selatan",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.026667,
+    "lng": 101.442222,
+    "line_id": "SA",
+    "station_code": "SA21",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "seri-andalas-sa",
+    "name": "Seri Andalas",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.015833,
+    "lng": 101.440556,
+    "line_id": "SA",
+    "station_code": "SA22",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "klang-jaya-sa",
+    "name": "Klang Jaya",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 3.005278,
+    "lng": 101.441667,
+    "line_id": "SA",
+    "station_code": "SA23",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "bandar-bukit-tinggi-sa",
+    "name": "Bandar Bukit Tinggi",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 2.993056,
+    "lng": 101.445833,
+    "line_id": "SA",
+    "station_code": "SA24",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "johan-setia-sa",
+    "name": "Johan Setia",
+    "line_type": "LRT",
+    "line_name": "LRT Shah Alam",
+    "lat": 2.976111,
+    "lng": 101.459167,
+    "line_id": "SA",
+    "station_code": "SA26",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kwasa-damansara-kajang",
     "name": "Kwasa Damansara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1772,
-    "lng": 101.5721
+    "lat": 3.176146,
+    "lng": 101.572052,
+    "line_id": "KGL",
+    "station_code": "KG04",
+    "source": "prasarana_gtfs"
   },
   {
-    "id": "kampung-selamat",
-    "name": "Kampung Selamat",
+    "id": "kwasa-sentral-kgl",
+    "name": "Kwasa Sentral",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.2198,
-    "lng": 101.579
-  },
-  {
-    "id": "sungai-buloh-kajang",
-    "name": "Sungai Buloh",
-    "line_type": "MRT",
-    "line_name": "MRT Kajang",
-    "lat": 3.2067,
-    "lng": 101.5803
+    "lat": 3.170112,
+    "lng": 101.564651,
+    "line_id": "KGL",
+    "station_code": "KG05",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kota-damansara",
     "name": "Kota Damansara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1496,
-    "lng": 101.5819
+    "lat": 3.150134,
+    "lng": 101.57869,
+    "line_id": "KGL",
+    "station_code": "KG06",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "surian",
     "name": "Surian",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1492,
-    "lng": 101.594
+    "lat": 3.14948,
+    "lng": 101.593925,
+    "line_id": "KGL",
+    "station_code": "KG07",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "mutiara-damansara",
     "name": "Mutiara Damansara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1555,
-    "lng": 101.6082
+    "lat": 3.155301,
+    "lng": 101.609077,
+    "line_id": "KGL",
+    "station_code": "KG08",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bandar-utama",
     "name": "Bandar Utama",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1468,
-    "lng": 101.6187
+    "lat": 3.14671,
+    "lng": 101.618599,
+    "line_id": "KGL",
+    "station_code": "KG09",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "ttdi",
+    "name": "Taman Tun Dr Ismail",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.13613,
+    "lng": 101.630539,
+    "line_id": "KGL",
+    "station_code": "KG10",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "phileo-damansara",
     "name": "Phileo Damansara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.129,
-    "lng": 101.6423
-  },
-  {
-    "id": "ttdi",
-    "name": "TTDI",
-    "line_type": "MRT",
-    "line_name": "MRT Kajang",
-    "lat": 3.1369,
-    "lng": 101.6291
-  },
-  {
-    "id": "semantan",
-    "name": "Semantan",
-    "line_type": "MRT",
-    "line_name": "MRT Kajang",
-    "lat": 3.151,
-    "lng": 101.6653
+    "lat": 3.129864,
+    "lng": 101.642471,
+    "line_id": "KGL",
+    "station_code": "KG12",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "pbd",
     "name": "Pusat Bandar Damansara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1434,
-    "lng": 101.6627
+    "lat": 3.143444,
+    "lng": 101.662857,
+    "line_id": "KGL",
+    "station_code": "KG13",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "semantan",
+    "name": "Semantan",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.150977,
+    "lng": 101.665497,
+    "line_id": "KGL",
+    "station_code": "KG14",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "muzium-negara",
     "name": "Muzium Negara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1379,
-    "lng": 101.6872
+    "lat": 3.137317,
+    "lng": 101.687336,
+    "line_id": "KGL",
+    "station_code": "KG15",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "pasar-seni-kgl",
+    "name": "Pasar Seni",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.142293265,
+    "lng": 101.6955642,
+    "line_id": "KGL",
+    "station_code": "KG16",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "merdeka",
     "name": "Merdeka",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1423,
-    "lng": 101.7031
+    "lat": 3.141969,
+    "lng": 101.70205,
+    "line_id": "KGL",
+    "station_code": "KG17",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bukit-bintang",
     "name": "Bukit Bintang",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1468,
-    "lng": 101.7113
+    "lat": 3.146503,
+    "lng": 101.710947,
+    "line_id": "KGL",
+    "station_code": "KG18A",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "trx-kajang",
-    "name": "TRX (MRT Kajang)",
+    "name": "Tun Razak Exchange (TRX)",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1422,
-    "lng": 101.719
+    "lat": 3.142403,
+    "lng": 101.720156,
+    "line_id": "KGL",
+    "station_code": "KG20",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "cochrane",
     "name": "Cochrane",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1329,
-    "lng": 101.7228
+    "lat": 3.132829,
+    "lng": 101.722962,
+    "line_id": "KGL",
+    "station_code": "KG21",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "maluri-mrt",
-    "name": "Maluri (MRT)",
+    "name": "Maluri",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1241,
-    "lng": 101.7263
-  },
-  {
-    "id": "taman-midah",
-    "name": "Taman Midah",
-    "line_type": "MRT",
-    "line_name": "MRT Kajang",
-    "lat": 3.1185,
-    "lng": 101.7364
+    "lat": 3.123623,
+    "lng": 101.727809,
+    "line_id": "KGL",
+    "station_code": "KG22",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-pertama",
     "name": "Taman Pertama",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1127,
-    "lng": 101.7291
+    "lat": 3.112547,
+    "lng": 101.729371,
+    "line_id": "KGL",
+    "station_code": "KG23",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "taman-midah",
+    "name": "Taman Midah",
+    "line_type": "MRT",
+    "line_name": "MRT Kajang",
+    "lat": 3.104505,
+    "lng": 101.732186,
+    "line_id": "KGL",
+    "station_code": "KG24",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-mutiara",
     "name": "Taman Mutiara",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1118,
-    "lng": 101.7414
+    "lat": 3.090989,
+    "lng": 101.740453,
+    "line_id": "KGL",
+    "station_code": "KG25",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-connaught",
     "name": "Taman Connaught",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.1034,
-    "lng": 101.7468
+    "lat": 3.079172,
+    "lng": 101.74522,
+    "line_id": "KGL",
+    "station_code": "KG26",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-suntex",
     "name": "Taman Suntex",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0985,
-    "lng": 101.7538
+    "lat": 3.071578,
+    "lng": 101.763552,
+    "line_id": "KGL",
+    "station_code": "KG27",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sri-raya",
     "name": "Sri Raya",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0905,
-    "lng": 101.7637
+    "lat": 3.062273,
+    "lng": 101.772899,
+    "line_id": "KGL",
+    "station_code": "KG28",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bandar-tun-hussein-onn",
     "name": "Bandar Tun Hussein Onn",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0679,
-    "lng": 101.7738
+    "lat": 3.048223,
+    "lng": 101.775109,
+    "line_id": "KGL",
+    "station_code": "KG29",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "batu-11-cheras",
     "name": "Batu 11 Cheras",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0466,
-    "lng": 101.781
+    "lat": 3.041339,
+    "lng": 101.773383,
+    "line_id": "KGL",
+    "station_code": "KG30",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "bukit-dukung",
     "name": "Bukit Dukung",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0281,
-    "lng": 101.7859
+    "lat": 3.026413,
+    "lng": 101.771072,
+    "line_id": "KGL",
+    "station_code": "KG31",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sungai-jernih",
     "name": "Sungai Jernih",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 3.0109,
-    "lng": 101.7905
+    "lat": 3.000948,
+    "lng": 101.783857,
+    "line_id": "KGL",
+    "station_code": "KG33",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "stadium-kajang",
     "name": "Stadium Kajang",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 2.9968,
-    "lng": 101.7914
+    "lat": 2.994514,
+    "lng": 101.786338,
+    "line_id": "KGL",
+    "station_code": "KG34",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kajang-mrt",
     "name": "Kajang",
     "line_type": "MRT",
     "line_name": "MRT Kajang",
-    "lat": 2.9938,
-    "lng": 101.7905
+    "lat": 2.982778,
+    "lng": 101.790278,
+    "line_id": "KGL",
+    "station_code": "KG35",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kwasa-damansara-putrajaya",
     "name": "Kwasa Damansara",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1772,
-    "lng": 101.5721
+    "lat": 3.1763324,
+    "lng": 101.5721456,
+    "line_id": "PYL",
+    "station_code": "PY01",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kampung-selamat-putrajaya",
     "name": "Kampung Selamat",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.2198,
-    "lng": 101.579
+    "lat": 3.197266,
+    "lng": 101.578499,
+    "line_id": "PYL",
+    "station_code": "PY03",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sungai-buloh-putrajaya",
     "name": "Sungai Buloh",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.2093,
-    "lng": 101.5619
+    "lat": 3.206429,
+    "lng": 101.581779,
+    "line_id": "PYL",
+    "station_code": "PY04",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "damansara-damai",
     "name": "Damansara Damai",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.2062,
-    "lng": 101.6079
+    "lat": 3.199892,
+    "lng": 101.592623,
+    "line_id": "PYL",
+    "station_code": "PY05",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sri-damansara-barat",
     "name": "Sri Damansara Barat",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.2003,
-    "lng": 101.6187
+    "lat": 3.198197,
+    "lng": 101.608302,
+    "line_id": "PYL",
+    "station_code": "PY06",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sri-damansara-sentral",
     "name": "Sri Damansara Sentral",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1951,
-    "lng": 101.6264
+    "lat": 3.198815,
+    "lng": 101.621396,
+    "line_id": "PYL",
+    "station_code": "PY07",
+    "source": "prasarana_gtfs"
   },
   {
-    "id": "sri-delima",
-    "name": "Sri Delima",
+    "id": "sri-damansara-timur-pyl",
+    "name": "Sri Damansara Timur",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1896,
-    "lng": 101.6366
+    "lat": 3.207832,
+    "lng": 101.628716,
+    "line_id": "PYL",
+    "station_code": "PY08",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "metro-prima-pyl",
+    "name": "Metro Prima",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.214438,
+    "lng": 101.639402,
+    "line_id": "PYL",
+    "station_code": "PY09",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kepong-baru",
     "name": "Kepong Baru",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1928,
-    "lng": 101.6334
+    "lat": 3.211663,
+    "lng": 101.648193,
+    "line_id": "PYL",
+    "station_code": "PY10",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "jinjang",
     "name": "Jinjang",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1862,
-    "lng": 101.6478
+    "lat": 3.209544,
+    "lng": 101.655829,
+    "line_id": "PYL",
+    "station_code": "PY11",
+    "source": "prasarana_gtfs"
   },
   {
-    "id": "sentul-barat-mrt",
-    "name": "Sentul Barat",
+    "id": "sri-delima",
+    "name": "Sri Delima",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1782,
-    "lng": 101.6824
-  },
-  {
-    "id": "jalan-ipoh",
-    "name": "Jalan Ipoh",
-    "line_type": "MRT",
-    "line_name": "MRT Putrajaya",
-    "lat": 3.1789,
-    "lng": 101.6884
+    "lat": 3.207108,
+    "lng": 101.665749,
+    "line_id": "PYL",
+    "station_code": "PY12",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kampung-batu-mrt",
     "name": "Kampung Batu",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1749,
-    "lng": 101.692
+    "lat": 3.205521,
+    "lng": 101.675473,
+    "line_id": "PYL",
+    "station_code": "PY13",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "kentonmen-pyl",
+    "name": "Kentonmen",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.19563,
+    "lng": 101.6797,
+    "line_id": "PYL",
+    "station_code": "PY14",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "jalan-ipoh",
+    "name": "Jalan Ipoh",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.189319,
+    "lng": 101.681145,
+    "line_id": "PYL",
+    "station_code": "PY15",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "sentul-barat-mrt",
+    "name": "Sentul Barat",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.179369,
+    "lng": 101.684742,
+    "line_id": "PYL",
+    "station_code": "PY16",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "titiwangsa-mrt",
-    "name": "Titiwangsa (MRT)",
+    "name": "Titiwangsa",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1737,
-    "lng": 101.6952
+    "lat": 3.17408,
+    "lng": 101.69581,
+    "line_id": "PYL",
+    "station_code": "PY17",
+    "source": "prasarana_gtfs"
   },
   {
-    "id": "hk-lrt-mrt",
+    "id": "hospital-kuala-lumpur",
     "name": "Hospital Kuala Lumpur",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1735,
-    "lng": 101.6995
+    "lat": 3.17405,
+    "lng": 101.70239,
+    "line_id": "PYL",
+    "station_code": "PY18",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "raja-uda",
     "name": "Raja Uda",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1686,
-    "lng": 101.7051
+    "lat": 3.16794,
+    "lng": 101.71017,
+    "line_id": "PYL",
+    "station_code": "PY19",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "ampang-park-mrt",
-    "name": "Ampang Park (MRT)",
+    "name": "Ampang Park",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1614,
-    "lng": 101.7195
+    "lat": 3.16225,
+    "lng": 101.71781,
+    "line_id": "PYL",
+    "station_code": "PY20",
+    "source": "prasarana_gtfs"
+  },
+  {
+    "id": "persiaran-klcc-pyl",
+    "name": "Persiaran KLCC",
+    "line_type": "MRT",
+    "line_name": "MRT Putrajaya",
+    "lat": 3.15712,
+    "lng": 101.71834,
+    "line_id": "PYL",
+    "station_code": "PY21",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "conlay",
     "name": "Conlay",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1513,
-    "lng": 101.7198
+    "lat": 3.15145,
+    "lng": 101.71801,
+    "line_id": "PYL",
+    "station_code": "PY22",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "trx",
-    "name": "TRX",
+    "name": "Tun Razak Exchange (TRX)",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1422,
-    "lng": 101.719
+    "lat": 3.14289,
+    "lng": 101.72034,
+    "line_id": "PYL",
+    "station_code": "PY23",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "chan-sow-lin-mrt",
-    "name": "Chan Sow Lin (MRT)",
+    "name": "Chan Sow Lin",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.1331,
-    "lng": 101.7158
+    "lat": 3.12839,
+    "lng": 101.71663,
+    "line_id": "PYL",
+    "station_code": "PY24",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kuchai",
     "name": "Kuchai",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0919,
-    "lng": 101.6878
+    "lat": 3.089546,
+    "lng": 101.694124,
+    "line_id": "PYL",
+    "station_code": "PY27",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-naga-emas",
     "name": "Taman Naga Emas",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0826,
-    "lng": 101.7077
+    "lat": 3.077688,
+    "lng": 101.699867,
+    "line_id": "PYL",
+    "station_code": "PY28",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sungai-besi-mrt",
     "name": "Sungai Besi",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0687,
-    "lng": 101.7102
+    "lat": 3.063737,
+    "lng": 101.7084,
+    "line_id": "PYL",
+    "station_code": "PY29",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "serdang-raya-utara",
     "name": "Serdang Raya Utara",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0495,
-    "lng": 101.7079
+    "lat": 3.041674,
+    "lng": 101.704928,
+    "line_id": "PYL",
+    "station_code": "PY31",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "serdang-raya-selatan",
     "name": "Serdang Raya Selatan",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0343,
-    "lng": 101.7068
+    "lat": 3.028463,
+    "lng": 101.707514,
+    "line_id": "PYL",
+    "station_code": "PY32",
+    "source": "prasarana_gtfs"
   },
   {
-    "id": "seri-serdang",
-    "name": "Seri Serdang",
+    "id": "serdang-jaya",
+    "name": "Serdang Jaya",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 3.0194,
-    "lng": 101.7069
+    "lat": 3.0216,
+    "lng": 101.709,
+    "line_id": "PYL",
+    "station_code": "PY33",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "upm-mrt",
     "name": "UPM",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9926,
-    "lng": 101.7124
+    "lat": 3.008489,
+    "lng": 101.705396,
+    "line_id": "PYL",
+    "station_code": "PY34",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "taman-equine",
     "name": "Taman Equine",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9829,
-    "lng": 101.6739
+    "lat": 2.98942,
+    "lng": 101.67244,
+    "line_id": "PYL",
+    "station_code": "PY36",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "putra-permai",
     "name": "Putra Permai",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9697,
-    "lng": 101.6706
+    "lat": 2.98339,
+    "lng": 101.66099,
+    "line_id": "PYL",
+    "station_code": "PY37",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "sixteen-sierra",
     "name": "16 Sierra",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9549,
-    "lng": 101.6587
+    "lat": 2.964974,
+    "lng": 101.654812,
+    "line_id": "PYL",
+    "station_code": "PY38",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "cyberjaya-utara",
     "name": "Cyberjaya Utara",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9404,
-    "lng": 101.6547
+    "lat": 2.95,
+    "lng": 101.6573,
+    "line_id": "PYL",
+    "station_code": "PY39",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "cyberjaya-city-centre",
     "name": "Cyberjaya City Centre",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9234,
-    "lng": 101.6551
+    "lat": 2.9384,
+    "lng": 101.6659,
+    "line_id": "PYL",
+    "station_code": "PY40",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "putrajaya-sentral-mrt",
     "name": "Putrajaya Sentral",
     "line_type": "MRT",
     "line_name": "MRT Putrajaya",
-    "lat": 2.9387,
-    "lng": 101.7139
+    "lat": 2.9313,
+    "lng": 101.6715,
+    "line_id": "PYL",
+    "station_code": "PY41",
+    "source": "prasarana_gtfs"
   },
   {
     "id": "kl-sentral-erl",
-    "name": "KL Sentral (ERL)",
+    "name": "KL Sentral",
+    "station_code": "KE1/KT1",
+    "lat": 3.134283,
+    "lng": 101.686385,
+    "source": "https://www.openstreetmap.org/way/638688527",
     "line_type": "ERL",
-    "line_name": "KLIA Ekspres/Transit",
-    "lat": 3.1357,
-    "lng": 101.688
+    "line_name": "KLIA Transit",
+    "line_id": "ERL_TRANSIT"
   },
   {
     "id": "bandar-tasik-selatan",
     "name": "Bandar Tasik Selatan",
+    "station_code": "KT2",
+    "lat": 3.0763048,
+    "lng": 101.7103241,
+    "source": "https://www.openstreetmap.org/way/43191005",
     "line_type": "ERL",
     "line_name": "KLIA Transit",
-    "lat": 3.0769,
-    "lng": 101.7115
+    "line_id": "ERL_TRANSIT"
   },
   {
     "id": "putrajaya-cyberjaya",
     "name": "Putrajaya & Cyberjaya",
+    "station_code": "KT3",
+    "lat": 2.9318305,
+    "lng": 101.6710183,
+    "source": "https://www.openstreetmap.org/way/1164909159",
     "line_type": "ERL",
     "line_name": "KLIA Transit",
-    "lat": 2.9264,
-    "lng": 101.678
+    "line_id": "ERL_TRANSIT"
   },
   {
     "id": "salak-tinggi",
     "name": "Salak Tinggi",
+    "station_code": "KT4",
+    "lat": 2.825397,
+    "lng": 101.7130747,
+    "source": "https://www.openstreetmap.org/way/165373122",
     "line_type": "ERL",
     "line_name": "KLIA Transit",
-    "lat": 2.8248,
-    "lng": 101.7044
+    "line_id": "ERL_TRANSIT"
   },
   {
     "id": "klia",
-    "name": "KLIA",
+    "name": "KLIA Terminal 1",
+    "station_code": "KE2/KT5",
+    "lat": 2.7547334,
+    "lng": 101.7046397,
+    "source": "https://www.openstreetmap.org/node/6763983630",
     "line_type": "ERL",
-    "line_name": "KLIA Ekspres/Transit",
-    "lat": 2.7456,
-    "lng": 101.709
+    "line_name": "KLIA Transit",
+    "line_id": "ERL_TRANSIT"
   },
   {
     "id": "klia2",
-    "name": "KLIA2",
+    "name": "KLIA Terminal 2",
+    "station_code": "KE3/KT6",
+    "lat": 2.7445265,
+    "lng": 101.6851796,
+    "source": "https://www.openstreetmap.org/way/1033454811",
     "line_type": "ERL",
-    "line_name": "KLIA Ekspres/Transit",
-    "lat": 2.745,
-    "lng": 101.7076
+    "line_name": "KLIA Transit",
+    "line_id": "ERL_TRANSIT"
+  },
+  {
+    "id": "kl-sentral-erl-ekspres",
+    "name": "KL Sentral",
+    "station_code": "KE1/KT1",
+    "lat": 3.134283,
+    "lng": 101.686385,
+    "source": "https://www.openstreetmap.org/way/638688527",
+    "line_type": "ERL",
+    "line_name": "KLIA Ekspres",
+    "line_id": "ERL_EKSPRES"
+  },
+  {
+    "id": "klia-ekspres",
+    "name": "KLIA Terminal 1",
+    "station_code": "KE2/KT5",
+    "lat": 2.7547334,
+    "lng": 101.7046397,
+    "source": "https://www.openstreetmap.org/node/6763983630",
+    "line_type": "ERL",
+    "line_name": "KLIA Ekspres",
+    "line_id": "ERL_EKSPRES"
+  },
+  {
+    "id": "klia2-ekspres",
+    "name": "KLIA Terminal 2",
+    "station_code": "KE3/KT6",
+    "lat": 2.7445265,
+    "lng": 101.6851796,
+    "source": "https://www.openstreetmap.org/way/1033454811",
+    "line_type": "ERL",
+    "line_name": "KLIA Ekspres",
+    "line_id": "ERL_EKSPRES"
   }
 ]
