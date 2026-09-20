@@ -104,6 +104,8 @@ CI melakukan pemasangan frozen lockfile, lint, semakan jenis, ujian data/API, bu
 
 Semakan responsif turut dibuat pada lebar 320, 390, 768 dan 1440 px. Ini emulasi Chromium; ujian telefon fizikal, Safari/iOS, pembaca skrin dan laluan berjalan di lapangan masih perlu dibuat.
 
+Aliran kerja repo: buat perubahan terus pada `main` mengikut pilihan maintainer. Jalankan semakan yang berkaitan sebelum push dan kemas kini README selepas kerja selesai. Jangan cipta branch, PR atau bot branch automatik tanpa arahan baharu.
+
 ## Kemas kini data
 
 ```sh
