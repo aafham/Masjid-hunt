@@ -165,3 +165,69 @@ test("failed map tiles show a fallback while pins and walking directions remain 
   await expect(directions).toHaveAttribute("href", href!);
   expect(pageErrors).toEqual([]);
 });
+
+test("Google map links to the station when there is no destination", async ({ page, isMobile }) => {
+  await page.route("**/api/mosques?*", route => route.fulfill({
+    json: { mosques: [], total: 0, source: "google", mapProvider: "google", mapEmbedAvailable: true }
+  }));
+  await page.goto("/station/kl-sentral");
+  await expect(page.getByText("Tiada masjid ditemui dalam 2 km.")).toBeVisible();
+  if (isMobile) await page.getByRole("button", { name: "Peta", exact: true }).click();
+  const stationMap = page.getByRole("link", { name: "Lihat stesen di Google Maps" });
+  await expect(stationMap).toBeVisible();
+  const url = new URL((await stationMap.getAttribute("href"))!);
+  expect(url.pathname).toBe("/maps/search/");
+  expect(url.searchParams.get("query")).toBe("3.13442,101.68625");
+  await expect(page.locator('iframe[src^="/api/map-embed"]')).toHaveCount(0);
+});
+
+test("station suggestions can be dismissed and reopened without losing the query", async ({ page }) => {
+  await page.goto("/");
+  const search = page.getByRole("combobox", { name: "Anda turun di stesen mana?" });
+  await search.fill("sentral");
+  await page.getByRole("button", { name: "Tutup cadangan carian" }).click();
+  await expect(search).toBeFocused();
+  await expect(search).toHaveValue("sentral");
+  await expect(search).toHaveAttribute("aria-expanded", "false");
+  await search.press("ArrowUp");
+  const last = page.getByRole("option").last();
+  await expect(last).toHaveAttribute("aria-selected", "true");
+  await search.press("Escape");
+  await expect(search).toHaveValue("sentral");
+  await expect(page.getByRole("listbox")).toHaveCount(0);
+  await search.click();
+  await expect(last).toBeVisible();
+});
+
+test("expanded mosque filters fit a narrow phone", async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto("/?station=kl-sentral");
+  await page.locator("summary").filter({ hasText: "Tapis hasil" }).click();
+  const query = page.getByLabel("Nama masjid dalam hasil ini");
+  await expect(query).toBeVisible();
+  expect(await query.evaluate(input => {
+    const box = input.getBoundingClientRect();
+    return box.left >= 0 && box.right <= document.documentElement.clientWidth;
+  })).toBe(true);
+  await query.fill("zzzaudit");
+  await expect(page.getByText("Tiada nama yang sepadan.", { exact: true })).toBeVisible();
+});
+
+test("primary navigation connects search, network map and directory", async ({ page, isMobile }) => {
+  await page.goto("/station/kl-sentral");
+  const nav = page.getByRole("navigation", { name: "Navigasi utama" });
+  if (isMobile) {
+    await page.locator(".site-footer").scrollIntoViewIfNeeded();
+    const bounds = await nav.boundingBox();
+    expect(bounds).not.toBeNull();
+    expect(Math.round(bounds!.y + bounds!.height)).toBe(page.viewportSize()!.height);
+    await expect(nav.getByRole("link", { name: "Stesen" })).toHaveAttribute("aria-current", "location");
+  }
+  await nav.getByRole("link", { name: "Peta" }).click();
+  await expect(page).toHaveURL(/\/peta$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Peta rangkaian transit");
+  await nav.getByRole("link", { name: "Stesen" }).click();
+  await expect(page).toHaveURL(/\/stations$/);
+  await nav.getByRole("link", { name: "Cari masjid" }).click();
+  await expect(page.getByRole("combobox", { name: "Anda turun di stesen mana?" })).toBeVisible();
+});

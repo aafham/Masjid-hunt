@@ -90,6 +90,18 @@ test("keyless OSM results are radius-filtered, deduplicated, attributed and have
   }
 });
 
+test("a malformed Overpass timestamp does not prevent displaying live results", async () => {
+  withoutKeys();
+  globalThis.fetch = async () => json({
+    osm3s: { timestamp_osm_base: "unknown" },
+    elements: [{ type: "node", id: 12, lat: 3.135, lon: 101.6861, tags: { name: "Surau" } }]
+  });
+  const result = await findMosquesByStation(station("osm-invalid-timestamp"), 1, "nearest");
+  assert.equal(result.sourceMode, "live");
+  assert.equal(result.mosques[0].name, "Surau");
+  assert.equal(result.sourceUpdatedAt, undefined);
+});
+
 test("Google failure uses actual OSM with warning; failed providers never become empty success", async () => {
   withoutKeys(); process.env.GOOGLE_PLACES_API_KEY = "private-test-key";
   globalThis.fetch = async (input) => String(input).includes("maps.googleapis.com")
@@ -175,6 +187,27 @@ test("stale JAKIM date, wrong zone and malformed times are rejected", async () =
   await assert.rejects(getPrayerTimes("SGR01", "2026-09-20"), /INVALID_RESPONSE/);
   globalThis.fetch = async () => json({ status: "OK!", zone: "SGR01", prayerTime: [{ ...prayerDay("20-Sep-2026"), fajr: "25:00" }] });
   await assert.rejects(getPrayerTimes("SGR01", "2026-09-20"), /INVALID_TIME/);
+});
+
+test("prayer API recognizes the month names returned by e-Solat throughout the year", async () => {
+  const months = ["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogos", "Sep", "Okt", "Nov", "Dis"];
+  globalThis.fetch = async () => json({
+    status: "OK!", zone: "SGR03", prayerTime: months.map(month => prayerDay(`01-${month}-2026`))
+  });
+  for (let month = 1; month <= 12; month++) {
+    const date = `2026-${String(month).padStart(2, "0")}-01`;
+    const response = await prayerRoute(new NextRequest(`http://localhost/api/prayer-times?zone=SGR03&date=${date}`));
+    assert.equal(response.status, 200, date);
+    assert.equal((await response.json()).date, date);
+  }
+});
+
+test("distance API returns a finite distance for antipodal coordinates", async () => {
+  const response = await distanceRoute(new NextRequest("http://localhost/api/distance?origin=8,0&dest=-8,180"));
+  assert.equal(response.status, 200);
+  const { distanceMeters } = await response.json();
+  assert.ok(Number.isFinite(distanceMeters));
+  assert.ok(Math.abs(distanceMeters - Math.PI * 6371000) < 1);
 });
 
 test("API validation rejects invalid radius/sort/coordinates and requires deliberate prayer zone", async () => {

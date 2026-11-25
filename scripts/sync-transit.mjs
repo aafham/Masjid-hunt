@@ -4,6 +4,7 @@ import { mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildNetworkShapes } from "./network-shapes.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const endpoint = "https://api.data.gov.my/gtfs-static/prasarana?category=rapid-rail-kl";
@@ -32,6 +33,7 @@ export function parseCsv(text) {
 
 const names = {
   KJ15: "KL Sentral", KJ16: "Bangsar", KJ11: "Kampung Baru", AG6: "Bandaraya", SP6: "Bandaraya",
+  SA12: "Dato' Menteri", SA15: "Seksyen 7 Shah Alam",
   SP22: "Kinrara BK5", PY14: "Kentonmen", KG20: "Tun Razak Exchange (TRX)", PY23: "Tun Razak Exchange (TRX)"
 };
 const acronyms = new Set(["KL", "KLCC", "USJ", "SS", "UPM", "PWTC", "IOI", "BK5", "SA"]);
@@ -113,12 +115,13 @@ async function main() {
   const [metadata, previous, erl] = await Promise.all([json("transit-lines.json"), json("stations.my.json"), json("erl-stations.json")]);
   const hashes = {};
   const feed = {};
-  for (const [key, filename] of Object.entries({ routes: "routes.txt", trips: "trips.txt", stopTimes: "stop_times.txt", stops: "stops.txt" })) {
+  for (const [key, filename] of Object.entries({ routes: "routes.txt", trips: "trips.txt", stopTimes: "stop_times.txt", stops: "stops.txt", shapes: "shapes.txt" })) {
     const contents = await readFile(path.join(directory, filename));
     hashes[filename] = createHash("sha256").update(contents).digest("hex");
     feed[key] = parseCsv(contents.toString("utf8"));
   }
   const stations = buildRapidStations(feed, metadata.lines, previous);
+  const shapes = buildNetworkShapes(feed, metadata.lines, stations);
   for (const line of metadata.lines.filter((line) => line.type === "ERL")) {
     const entries = erl.filter((station) => line.id === "ERL_TRANSIT" || station.express);
     if (entries.length !== line.stationCount) throw new Error(`ERL count mismatch for ${line.id}`);
@@ -133,7 +136,9 @@ async function main() {
     if (!stations.some((station) => station.id === target)) throw new Error(`Missing alias target ${target}`);
   }
   await writeFile(path.join(root, "data/stations.my.json"), JSON.stringify(stations, null, 2) + "\n");
-  await writeFile(path.join(root, "data/transit-feed-provenance.json"), JSON.stringify({ endpoint, checkedAt: metadata.checkedAt, sha256: hashes }, null, 2) + "\n");
+  await writeFile(path.join(root, "data/transit-shapes.json"), JSON.stringify(shapes, null, 2)
+    .replace(/\[\n\s+([\d.]+),\n\s+([\d.]+)\n\s+\]/g, "[$1, $2]") + "\n");
+  await writeFile(path.join(root, "data/transit-feed-provenance.json"), JSON.stringify({ endpoint, checkedAt: metadata.rapidRailCheckedAt, sha256: hashes }, null, 2) + "\n");
   console.log(`Updated ${stations.length} route-station entries across ${metadata.lines.length} operational lines.`);
 }
 

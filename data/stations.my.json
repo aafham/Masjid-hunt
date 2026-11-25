@@ -1013,7 +1013,7 @@
   },
   {
     "id": "dato-menteri-sa",
-    "name": "Dato' Menteri - SA Sentral",
+    "name": "Dato' Menteri",
     "line_type": "LRT",
     "line_name": "LRT Shah Alam",
     "lat": 3.069722,
@@ -1035,7 +1035,7 @@
   },
   {
     "id": "seksyen-7-sa",
-    "name": "Seksyen 7",
+    "name": "Seksyen 7 Shah Alam",
     "line_type": "LRT",
     "line_name": "LRT Shah Alam",
     "lat": 3.067222,

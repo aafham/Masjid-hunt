@@ -180,7 +180,7 @@ async function searchGoogle(station: Station, radiusMeters: number, key: string)
 async function searchOpenStreetMap(station: Station, radiusMeters: number): Promise<{ mosques: Mosque[]; updatedAt?: string }> {
   const endpoint = process.env.OVERPASS_API_URL || "https://overpass.private.coffee/api/interpreter";
   const query = `[out:json][timeout:10];nwr["amenity"="place_of_worship"]["religion"="muslim"](around:${radiusMeters},${station.lat},${station.lng});out center tags;`;
-  const data = await fetchJson<{ elements?: OverpassElement[]; remark?: string; osm3s?: { timestamp_osm_base?: string } }>(endpoint, "openstreetmap", {
+  const data = await fetchJson<{ elements?: OverpassElement[]; remark?: string; osm3s?: { timestamp_osm_base?: unknown } }>(endpoint, "openstreetmap", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -208,7 +208,9 @@ async function searchOpenStreetMap(station: Station, radiusMeters: number): Prom
       osmUrl: `https://www.openstreetmap.org/${element.type}/${element.id}`
     }];
   });
-  return { mosques, updatedAt: data.osm3s?.timestamp_osm_base };
+  const timestamp = data.osm3s?.timestamp_osm_base;
+  const time = typeof timestamp === "string" ? Date.parse(timestamp) : NaN;
+  return { mosques, updatedAt: Number.isFinite(time) ? new Date(time).toISOString() : undefined };
 }
 
 type MatrixElement = {

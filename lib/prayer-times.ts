@@ -26,17 +26,19 @@ export function validPrayerDate(value: string): boolean {
   return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
 }
 
+const jakimMonths: Record<string, string> = {
+  jan: "01", feb: "02", mac: "03", mar: "03", apr: "04", mei: "05", may: "05", jun: "06",
+  jul: "07", ogos: "08", aug: "08", sep: "09", okt: "10", oct: "10", nov: "11", dis: "12", dec: "12"
+};
+
 function jakimDate(value: unknown): string | null {
   if (typeof value !== "string") return null;
   if (validPrayerDate(value)) return value;
-  const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-  const match = /^(\d{2})-([A-Za-z]{3})-(\d{4})$/.exec(value);
+  const match = /^(\d{2})-([A-Za-z]{3,4})-(\d{4})$/.exec(value);
   if (!match) return null;
-  const token = match[2].toLowerCase();
-  // e-Solat can emit Dis (Disember) instead of Dec.
-  const month = months.indexOf(token === "dis" ? "dec" : token) + 1;
+  const month = jakimMonths[match[2].toLowerCase()];
   if (!month) return null;
-  const date = `${match[3]}-${String(month).padStart(2, "0")}-${match[1]}`;
+  const date = `${match[3]}-${month}-${match[1]}`;
   return validPrayerDate(date) ? date : null;
 }
 

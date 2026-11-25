@@ -6,7 +6,8 @@ Cari masjid dan surau berhampiran stesen LRT, MRT dan ERL di Lembah Klang serta 
 
 ## Pengalaman pengguna
 
-- Reka bentuk responsif: senarai/peta boleh ditukar pada mobile; senarai dan peta bersebelahan pada desktop.
+- Pada telefon, bar navigasi bawah membuka **Cari masjid**, **Peta** dan **Stesen**. Dalam hasil carian, butang **Senarai** dan **Peta** menukar paparan masjid di sekitar stesen.
+- [Peta rangkaian transit](https://transit2masjid.vercel.app/peta) memaparkan lapan laluan. Pilih pin atau nama stesen untuk melihat pertukaran dan membuka carian masjid. Enam laluan Rapid Rail menggunakan geometri GTFS. Dua laluan ERL menggunakan garisan putus-putus mengikut turutan hentian.
 - Kategori **Semua / LRT / MRT / ERL**, pilihan laluan sebenar dan carian nama/kod stesen dengan sokongan keyboard.
 - Pilih stesen secara terus atau tekan **Guna lokasi saya** untuk melihat tiga cadangan stesen berhampiran. Lokasi hanya diminta selepas tindakan pengguna.
 - Jarak maksimum **1 / 2 / 3 km**, susunan terdekat/terjauh dan carian nama dalam hasil stesen itu.
@@ -17,7 +18,7 @@ Cari masjid dan surau berhampiran stesen LRT, MRT dan ERL di Lembah Klang serta 
 
 ## Laluan yang tersedia
 
-Disemak **20 September 2026**. Senarai ini bukan jadual tren atau status gangguan langsung.
+Data LRT dan MRT disemak dengan feed Prasarana pada **25 November 2026**. Semakan perkhidmatan ERL bertarikh **20 September 2026**. Rujuk operator untuk jadual dan gangguan semasa.
 
 | Kategori | Laluan | Entri stesen |
 | --- | --- | ---: |
@@ -68,7 +69,7 @@ Aktifkan API Google yang berkaitan, billing dan sekatan key yang sesuai jika men
 - **Masjid/surau:** snapshot **1,485** lokasi sebenar OpenStreetMap, bukan data demo. Tarikh replikasi sumber ialah **15 Julai 2026**, walaupun eksport diperoleh pada 20 September 2026. Tarikh sumber dan atribusi dipaparkan bersama hasil.
 - Jika Google dikonfigurasi, ia menjadi sumber utama. Respons `ZERO_RESULTS` yang sah kekal kosong. Kegagalan Google menggunakan OSM dengan makluman; kegagalan Overpass pilihan menggunakan snapshot bertarikh. Data demo lama telah dibuang.
 - Hasil ditapis mengikut radius. Apabila routing Google tersedia, jarak dan masa berjalan daripada API digunakan. Jika tidak, jarak dilabel **anggaran garis lurus** dan tiada masa berjalan rekaan dipaparkan. Laluan sebenar boleh lebih jauh daripada anggaran.
-- **Waktu solat:** [e-Solat JAKIM](https://www.e-solat.gov.my/), berdasarkan zon yang dipilih dan tarikh `Asia/Kuala_Lumpur`. Zon lalai WLY01 dilabel jelas; zon tidak diteka daripada lokasi pengguna. Singkatan Disember `Dis` dan `Dec` diterima. Respons dengan zon/tarikh tidak sepadan ditolak.
+- **Waktu solat:** [e-Solat JAKIM](https://www.e-solat.gov.my/), berdasarkan zon yang dipilih dan tarikh `Asia/Kuala_Lumpur`. Zon lalai WLY01 dilabel jelas; zon tidak diteka daripada lokasi pengguna. Parser menerima tarikh ISO serta nama bulan yang digunakan JAKIM, termasuk `Mac`, `Mei`, `Ogos`, `Okt` dan `Dis`. Respons dengan zon/tarikh tidak sepadan ditolak.
 - Cache memori terhad bagi setiap instance: carian 10 minit, jadual solat 6 jam dengan key zon+tarikh. Permintaan serentak dikongsi; timeout dan had pagination mengawal permintaan upstream. Ini bukan cache teragih atau rate limiter per pengguna.
 
 Koordinat merujuk titik/kompleks stesen atau pusat objek peta, **bukan pintu masuk yang disahkan**. Liputan, nama, akses dan kemudahan mungkin tidak lengkap. Semak navigasi serta akses masuk sebelum berjalan. Aplikasi belum menyediakan PWA/offline, status tren langsung atau data kemudahan yang disahkan di lapangan.
@@ -81,6 +82,7 @@ Data OSM tertakluk kepada [ODbL](https://opendatacommons.org/licenses/odbl/1-0/)
 | --- | --- |
 | `/` | Cari stesen; parameter `station` dan `radius` boleh dikongsi. |
 | `/stations` | Direktori kategori, laluan dan stesen. |
+| `/peta` | Peta interaktif lapan laluan dengan penapis, pilihan stesen dan pautan pertukaran. |
 | `/station/[id]` | Hasil untuk stesen tetap, dengan radius pilihan. Alias lama yang diketahui dialih ke ID semasa. |
 | `/api/mosques?stationId=kl-sentral&radius=2&sort=nearest` | Radius hanya 1, 2 atau 3; sort `nearest` atau `farthest`. Respons menyertakan sumber, atribusi, liputan dan jenis peta. |
 | `/api/prayer-times?zone=WLY01&date=2026-09-20` | Zon diperlukan; tarikh pilihan, lalai hari Malaysia semasa. |
@@ -91,10 +93,13 @@ Parameter API tidak sah menghasilkan 400; stesen tidak ditemui 404; kegagalan su
 
 ## Semakan dan ujian
 
+[Laporan audit 25 November 2026](docs/audit-2026-11-25.md)
+
 ```sh
-pnpm check             # lint, typecheck, 20 ujian data/API dan build production
+pnpm check             # lint, typecheck, ujian data/API dan build production
 pnpm exec playwright install chromium
-pnpm test:e2e          # 22 ujian browser: 11 aliran × mobile/desktop
+pnpm test:e2e          # aliran pengguna pada Chromium mudah alih dan desktop
+pnpm audit             # audit penuh termasuk dependency pembangunan
 pnpm audit --audit-level=high
 ```
 

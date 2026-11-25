@@ -1,10 +1,11 @@
 {
   "endpoint": "https://api.data.gov.my/gtfs-static/prasarana?category=rapid-rail-kl",
-  "checkedAt": "2026-09-20",
+  "checkedAt": "2026-11-25",
   "sha256": {
-    "routes.txt": "cb0d73642b05bd653efeb5420544b6cf0aff25faabb010bf1633a43fa18445c5",
+    "routes.txt": "ab769d09f48df0fb768cbd30dde9efb47f10b283574e76da445ccee270e5dfc3",
     "trips.txt": "ea3029019b8e747b5785fd38624ae9551b124d90687aef9bddd09d1974835859",
     "stop_times.txt": "f7d8a437b47290232122d94fccb0a550233474ac3464bc8d4f1e65e4db13aa38",
-    "stops.txt": "831edfdd6210c41a7a49e9d23d2fcd6acdd6913ee8c9b16753f8bfa0a0d14034"
+    "stops.txt": "4e2a45883eafea0a73dc461b63d4d4fc9dffe7a3b9a48e0d74f3bc582df9bbfc",
+    "shapes.txt": "031c7f416379bb229e264219460878795172675de549e501e8fa4e0ff5f4b11a"
   }
 }

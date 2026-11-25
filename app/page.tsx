@@ -9,10 +9,9 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
   const radius = [1, 2, 3].includes(Number(params.radius)) ? Number(params.radius) : 2;
   return <>
     <section className="hero" aria-labelledby="home-title"><div>
-      <p className="eyebrow"><span className="live-dot" /> UNTUK PERJALANAN HARIAN ANDA</p>
-      <h1 id="home-title">Turun tren.<br /><span>Singgah solat.</span></h1>
-      <p className="hero-copy">Temui masjid dan surau berhampiran stesen anda.<br className="desktop-only" /> Pilih stesen, semak jarak, teruskan perjalanan.</p>
-    </div><div className="journey-art" aria-hidden="true"><span><TrainFront size={30} /></span><i /><ArrowRight size={22} /><i /><span><MapPin size={30} /></span><p>Satu stesen. Banyak persinggahan.</p></div></section>
+      <h1 id="home-title">Cari masjid <span>dekat stesen.</span></h1>
+      <p className="hero-copy">Pilih stesen LRT, MRT atau ERL untuk lihat masjid, surau dan laluan berjalan.</p>
+    </div><div className="journey-art" aria-hidden="true"><span><TrainFront size={30} /></span><i /><ArrowRight size={22} /><i /><span><MapPin size={30} /></span></div></section>
     <ResultsExplorer key={(station?.id || "search") + ":" + radius} stations={getStations()} initialStationId={station?.id} initialRadius={radius} />
   </>;
 }
