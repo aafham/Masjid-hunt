@@ -32,7 +32,9 @@ function jakimDate(value: unknown): string | null {
   const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
   const match = /^(\d{2})-([A-Za-z]{3})-(\d{4})$/.exec(value);
   if (!match) return null;
-  const month = months.indexOf(match[2].toLowerCase()) + 1;
+  const token = match[2].toLowerCase();
+  // e-Solat can emit Dis (Disember) instead of Dec.
+  const month = months.indexOf(token === "dis" ? "dec" : token) + 1;
   if (!month) return null;
   const date = `${match[3]}-${String(month).padStart(2, "0")}-${match[1]}`;
   return validPrayerDate(date) ? date : null;

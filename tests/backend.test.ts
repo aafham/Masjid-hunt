@@ -138,6 +138,36 @@ test("JAKIM uses the requested date and zone, normalizes actual times, and separ
   assert.equal(validPrayerDate("2026-02-30"), false);
 });
 
+test("prayer API accepts JAKIM's Malay December dates and selects only the exact day", async () => {
+  const days = [
+    prayerDay("30-Nov-2026"),
+    { ...prayerDay("01-Dis-2026"), fajr: "05:52:00" },
+    { ...prayerDay("02-Dis-2026"), fajr: "05:53:00" },
+    prayerDay("03-Dec-2026"),
+    prayerDay("2026-12-04")
+  ];
+  globalThis.fetch = async (input) => {
+    assert.equal(new URL(String(input)).searchParams.get("zone"), "WLY01");
+    return json({ status: "OK!", zone: "WLY01", prayerTime: days });
+  };
+  for (const [date, fajr] of [
+    ["2026-11-30", "05:56"],
+    ["2026-12-01", "05:52"],
+    ["2026-12-02", "05:53"],
+    ["2026-12-03", "05:56"],
+    ["2026-12-04", "05:56"]
+  ]) {
+    const response = await prayerRoute(new NextRequest(`http://localhost/api/prayer-times?zone=WLY01&date=${date}`));
+    assert.equal(response.status, 200, date);
+    const result = await response.json();
+    assert.equal(result.date, date);
+    assert.equal(result.timings.Fajr, fajr);
+  }
+  const missing = await prayerRoute(new NextRequest("http://localhost/api/prayer-times?zone=WLY01&date=2027-12-01"));
+  assert.equal(missing.status, 503, "the same day and month in a different year must be rejected");
+  assert.equal((await missing.json()).code, "PROVIDER_UNAVAILABLE");
+});
+
 test("stale JAKIM date, wrong zone and malformed times are rejected", async () => {
   globalThis.fetch = async () => json({ status: "OK!", zone: "SGR01", prayerTime: [prayerDay("19-Sep-2026")] });
   await assert.rejects(getPrayerTimes("SGR01", "2026-09-20"), /DATE_MISMATCH/);
